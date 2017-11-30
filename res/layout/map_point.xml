@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/RadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="普通图"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/statellite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="卫星图"
+            android:textColor="#000000" />
+
+    </RadioGroup>
+    
+   <com.baidu.mapapi.map.MapView
+	       android:id="@+id/bmapView"
+	       android:layout_width="fill_parent"
+	       android:layout_height="fill_parent"
+	       android:layout_above="@+id/btnOK"
+	       android:layout_below="@+id/RadioGroup"
+	       android:clickable="true"
+       />
+
+   <Button
+       android:id="@+id/btnOK"
+       android:layout_width="fill_parent"
+       android:layout_height="45dp"
+       android:layout_alignParentBottom="true"
+       android:background="@drawable/map_point_select"
+       android:text="确定"
+       android:textColor="@color/white" />
+
+</RelativeLayout>

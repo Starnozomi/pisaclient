@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:padding="10dip"
+    >
+
+
+     <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lineSpacingExtra="2dp"
+            android:textSize="18sp"
+            android:layout_marginTop="6dip"
+            android:textColor="@color/feed_odd_text_color" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+    		android:layout_marginTop="10dip"
+            android:textColor="@color/black" />
+        
+        
+        <LinearLayout  android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:orientation="horizontal"
+	        android:layout_marginTop="10dip"
+	        android:gravity="bottom"
+	        >
+            
+            <TextView
+                android:gravity="center"
+            android:id="@+id/tv_crop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           	android:layout_weight="1.0"
+            android:textColor="@color/moreinfo" />
+            
+             <TextView
+                 android:gravity="center"
+            android:id="@+id/tv_expert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:textColor="@color/moreinfo" />
+             
+              <TextView
+                android:gravity="center"
+	            android:id="@+id/tv_create_time"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1.0"
+	            android:textColor="@color/moreinfo" />
+	            
+        </LinearLayout>
+    
+
+</LinearLayout>

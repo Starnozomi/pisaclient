@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:gravity="center"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/setting_header_bg">
+        
+        <ImageView
+            android:id="@+id/iv_header"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            
+            android:background="@drawable/default_header"
+            android:contentDescription="@string/no_desc" />
+            </LinearLayout>       
+        
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_circle_border"
+            android:padding="2dp" >
+
+            <TextView
+                android:layout_width="@dimen/text_width_default"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/user_showname"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_circle_border"
+            android:padding="2dp" >
+
+            <TextView
+                android:layout_width="@dimen/text_width_default"
+                android:layout_height="wrap_content"
+                android:text="@string/user_loginname"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_loginname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pwd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_circle_border"
+            android:padding="2dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="@dimen/text_width_default"
+                android:layout_height="wrap_content"
+                android:text="@string/user_pwd"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_pwd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_circle_border"
+            android:padding="2dp" >
+
+            <TextView
+                android:layout_width="@dimen/text_width_default"
+                android:layout_height="wrap_content"
+                android:text="@string/user_tel"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_tel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_about_country"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_circle_border"
+            android:padding="6dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/already_about_country"
+                android:textColor="@color/country_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_countries"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_circle_border"
+            android:padding="6dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_countries"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/select_country"
+                android:textColor="@color/country_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/btn_common_edit_style"
+        android:text="@string/edit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_default"
+        android:visibility="gone" >
+    </Button>
+     
+
+</RelativeLayout>

@@ -1,0 +1,517 @@
+package com.supermap.pisaclient.http;
+
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+import com.baidu.mapapi.model.LatLng;
+import com.google.gson.stream.JsonReader;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+
+import android.content.Context;
+import android.content.res.AssetManager;
+
+public class JsonHelper {
+
+	public static JSONArray getJsonArray(String json){
+		try {
+			return new JSONArray(json);
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+	
+	public static JSONObject getJson(String str){
+		try {
+			return new JSONObject(str);
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+	
+	public static HashMap<String, String> getAreaDataFromJson(Context context, String fileName) {  
+		  	
+		    HashMap<String, String> params = new HashMap<String, String>();
+		    String strArea="",strLocation ="";
+	        AssetManager assetManager = context.getAssets();  
+	            try { 
+	                JsonReader reader = new JsonReader(new InputStreamReader( assetManager.open(fileName)));
+	        		 reader.beginObject();
+	                 while (reader.hasNext()) {
+	                   String name = reader.nextName();
+	                   if ("features".equals(name)) {
+	                 	  reader.beginArray();
+	                 	  while (reader.hasNext()) {
+	                           reader.beginObject(); 
+	                           while (reader.hasNext()) {
+	                           	String name1 = reader.nextName();
+	                   		 if(name1.equals("properties"))
+	                     	 {
+	                   			 reader.beginObject();
+	                        	  while (reader.hasNext()) {
+	                        		 String name2 = reader.nextName();
+	                        		 if(name2.equals("MC"))
+	                        		  {
+	                        			  strArea = reader.nextString().toString();
+	                        		  }
+	                        		 else
+	                        			 reader.skipValue(); 
+	                        	  }
+	                        	  reader.endObject();
+	                     	 }
+	                   		 else  if (name1.equals("geometry")) {
+	                             	  reader.beginObject();
+	                             	  while (reader.hasNext()) {
+	                             		 String name2 = reader.nextName();
+	                             		 if(name2.equals("coordinates"))
+	                             		  {
+	                             			  reader.beginArray();
+	                             			  while (reader.hasNext()) 
+	                             			  {
+	                             				 strLocation+= reader.nextString()+",";
+//	                             		          reader.peek();
+	                             			  }
+	                             			  reader.endArray();
+	                             		  }
+	                             		else
+	                             			 reader.skipValue();
+	                             	   }
+	                                   reader.endObject();
+	                             	  }
+	                		  else
+	                  			 reader.skipValue();
+	                                }
+	                         if(!params.containsKey(strArea)){
+	                        	 strLocation=strLocation.substring(0, strLocation.length()-2);
+	                        	 params.put(strArea, strLocation);
+	                           }
+	                         strLocation="";
+	                       	 reader.endObject();
+	                              }
+
+	                 	 
+	                 	 reader.endArray();
+	                 	  }
+	                   else {
+	                       reader.skipValue();
+	                     }
+	                 }
+	                 reader.endObject();
+	                 reader.close();
+	        } 
+	       catch (IOException e) {  
+	            e.printStackTrace();  
+	        }   
+	            return params;
+	       }
+
+	public static List<List<String>> getBorderlineDataFormJson(Context context, String fileName)
+	{
+		List<List<String>> lstAllData = new ArrayList<List<String>>();
+		 AssetManager assetManager = context.getAssets();  
+         try { 
+             JsonReader reader = new JsonReader(new InputStreamReader( assetManager.open(fileName) ) );
+             reader.beginObject();
+             while (reader.hasNext()) {
+               String name = reader.nextName();
+               if ("features".equals(name)) {
+             	  reader.beginArray();
+             	  while (reader.hasNext()) {
+                       reader.beginObject(); 
+                       while (reader.hasNext()) {
+                       	String name1 = reader.nextName();
+               		   if (name1.equals("geometry")) {
+                         	  reader.beginObject();
+                         	  List<String> lstData = new ArrayList<String>();
+                         	  while (reader.hasNext()) {
+                         		 String name2 = reader.nextName();
+                         		 if(name2.equals("coordinates"))
+                         		  {
+                         			  reader.beginArray();
+                         			  while (reader.hasNext()) 
+                         			  {
+                         				  reader.beginArray();
+                         				  while(reader.hasNext())
+                         				  {
+                         					 lstData.add(reader.nextString());
+                         				  }
+                         				  reader.endArray();
+                         			  }
+                         			  reader.endArray();
+                         		  }
+                         		else
+                         			 reader.skipValue();
+                         	   }
+                         	   lstAllData.add(lstData);
+                               reader.endObject();
+                         	  }
+            		  else
+              			 reader.skipValue();
+                            }
+                   	 reader.endObject();
+                          }
+
+             	 
+             	 reader.endArray();
+             	  }
+               else {
+                   reader.skipValue();
+                 }
+             }
+             reader.endObject();
+             reader.close();
+         } 
+    	catch (Exception e) 
+    	{  
+           e.printStackTrace();  
+    	}
+         return lstAllData;
+	}
+    
+	public  List<RenderModle> getRenderataFromJson(Context context, String fileName,String StrField) {  
+	  	
+		List<RenderModle> params = new ArrayList<RenderModle>();
+        AssetManager assetManager = context.getAssets();  
+            try { 
+                JsonReader reader = new JsonReader(new InputStreamReader( assetManager.open(fileName)));
+        		 reader.beginObject();
+                 while (reader.hasNext()) {
+                   String name = reader.nextName();
+                   if ("features".equals(name)) {
+                 	  reader.beginArray();
+                 	  while (reader.hasNext()) {
+                           reader.beginObject(); 
+                           RenderModle obj = new RenderModle();
+                           while (reader.hasNext()) {
+                           	String name1 = reader.nextName();
+                   		 if(name1.equals("properties"))
+                     	 {
+                   			 reader.beginObject();
+                        	  while (reader.hasNext()) {
+                        		 String name2 = reader.nextName();
+                        		 if(name2.equals(StrField))
+                        		  {
+                        			 obj.setKey( reader.nextString());
+                        		  }
+                        		 else
+                        			 reader.skipValue(); 
+                        	  }
+                        	  reader.endObject();
+                     	 }
+                   		 else  if (name1.equals("geometry")) {
+                             	  reader.beginObject();
+                             	  while (reader.hasNext()) {
+                             		 String name2 = reader.nextName();
+                             		 if(name2.equals("coordinates"))
+                             		  {
+   			             			  reader.beginArray();
+   			             			  int i=0;
+   			             			  while (reader.hasNext()) 
+   			             			  {
+   			             				  i++;
+   			             				  if(i<2)////保证只读一组数据(百度地圖不支持掏洞)
+   			             				  {
+   			             				 reader.beginArray();
+   			             				  while (reader.hasNext()) 
+   			             				  {
+   			             					 reader.beginArray();
+   				             				  while (reader.hasNext()) 
+   				             				  {
+   				             					  try{
+   				             						  String t =reader.nextString();
+   				             						  obj.setValues(t,null);
+   				             					  }
+   				             					  catch(Exception e)
+   				             					  {
+   				             						 reader.beginArray();
+   				             						 while (reader.hasNext()) 
+   						             				  {
+   				             							 String t =reader.nextString();
+   				             							 obj.setValues(t,null);
+   						             				  }
+   				             						  reader.endArray();
+   				             					  }
+   				             				  }
+   				             				  reader.endArray();
+   			             				  }
+   			             				  reader.endArray();
+   			             				  }
+   			             				  else
+   			             					 reader.skipValue();
+   			             			  }
+   			             			  reader.endArray();
+   			             		  }
+                             		else
+                             			 reader.skipValue();
+                             	   }
+                                   reader.endObject();
+                             	  }
+                		  else
+                  			 reader.skipValue();
+                                }
+                         params.add(obj);
+                       	 reader.endObject();
+                              }
+                 	 reader.endArray();
+                 	  }
+                   else {
+                       reader.skipValue();
+                     }
+                 }
+                 reader.endObject();
+                 reader.close();
+        } 
+       catch (IOException e) {  
+            e.printStackTrace();  
+        }   
+            return params;
+       }
+
+	public  List<RenderModle> getRenderataFromWebJson(String StrField,String ptype,String pname) {  
+	  	
+		List<RenderModle> params = new ArrayList<RenderModle>();
+            try { 
+            	HashMap<String, String> params1 = new HashMap<String, String>();	
+    			params1.put("para",	String.format("{\"ptype\":\"%s\",\"pname\":\"%s\"}",ptype,pname));
+				JSONObject  object = HttpHelper.loadOneGzip(HttpHelper.GET_MONITORPRODUCT_LIST_URL, params1);
+				String str = object.toString();
+				InputStream stream =new ByteArrayInputStream(str.getBytes());
+    			JsonReader reader = new JsonReader(new InputStreamReader(stream));
+    			RenderModle obj =null;
+        		 reader.beginObject();
+                 while (reader.hasNext()) {
+                   String name = reader.nextName();
+                   if ("features".equals(name)) {
+                 	  reader.beginArray();
+                 	  while (reader.hasNext()) {
+                           reader.beginObject(); 
+                           obj = new RenderModle();
+                           while (reader.hasNext()) {
+                           	String name1 = reader.nextName();
+                   		 if(name1.equals("properties"))
+                     	 {
+                   			 reader.beginObject();
+                        	  while (reader.hasNext()) {
+                        		 String name2 = reader.nextName();
+                        		 if(name2.equals(StrField))
+                        		  {
+                        			 obj.setKey( reader.nextString());
+                        		  }
+                        		 else
+                        			 reader.skipValue(); 
+                        	  }
+                        	  reader.endObject();
+                     	 }
+                   		 else  if (name1.equals("geometry")) {
+                             	  reader.beginObject();
+                             	  while (reader.hasNext()) {
+                             		 String name2 = reader.nextName();
+                             		 if(name2.equals("coordinates"))
+                             		  {
+   			             			  reader.beginArray();
+   			             			  int i=0;
+   			             			  while (reader.hasNext()) 
+   			             			  {
+   			             				  i++;
+   			             				  if(i<2)////保证只读一组数据(百度地圖不支持掏洞)
+   			             				  {
+   			             				 reader.beginArray();
+   			             				  while (reader.hasNext()) 
+   			             				  {
+   			             					 reader.beginArray();
+   				             				  while (reader.hasNext()) 
+   				             				  {
+   				             					  try{
+   				             						  String t =reader.nextString();
+   				             						  obj.setValues(t,null);
+   				             					  }
+   				             					  catch(Exception e)
+   				             					  {
+   				             						 reader.beginArray();
+   				             						 while (reader.hasNext()) 
+   						             				  {
+   				             							 String t =reader.nextString();
+   				             							 obj.setValues(t,null);
+   						             				  }
+   				             						  reader.endArray();
+   				             					  }
+   				             				  }
+   				             				  reader.endArray();
+   			             				  }
+   			             				  reader.endArray();
+   			             				  }
+   			             				  else
+   			             					 reader.skipValue();
+   			             			  }
+   			             			  reader.endArray();
+   			             		  }
+                             		else
+                             			 reader.skipValue();
+                             	   }
+                                   reader.endObject();
+                             	  }
+                		  else
+                  			 reader.skipValue();
+                                }
+                         params.add(obj);
+                       	 reader.endObject();
+                              }
+                 	 reader.endArray();
+                 	  }
+                   else if("legend".equals(name))
+                   {
+                	   reader.beginArray();
+                	   while (reader.hasNext()) {
+                           reader.beginObject(); 
+                           obj = new RenderModle();
+                           while (reader.hasNext()) {
+                        	   if("color".equals(reader.nextName()))
+                        	   obj.setKey( reader.nextString());
+                        	   else
+                        		   obj.setValues(null, reader.nextString());
+                           }
+                           params.add(obj);
+                       	   reader.endObject();
+                           }
+                	   reader.endArray();
+                   }
+                 else if("name".equals(name))
+                   {
+                	   // reader.beginObject(); 
+                	    obj = new RenderModle();
+                	    if (reader.hasNext()) 
+                	    {
+                	    	String t=reader.nextString();
+                	    	obj.setKey( t);
+                	    }
+                	    params.add(obj);
+//                		reader.endObject();
+                   }
+                 else if("unit".equals(name)){
+                	 obj = new RenderModle();
+             	    if (reader.hasNext()) 
+             	    {
+             	    	String t=reader.nextString();
+             	    	obj.setUnit(t);
+             	    }
+             	    params.add(obj);
+                 } else {
+                       reader.skipValue();
+                     }
+                 }
+                 reader.endObject();
+                 reader.close();
+        } 
+            catch (Exception e){  
+            e.printStackTrace();  
+        }   
+            return params;
+       }
+
+	public List<WeatherInfoModel> GetWeatherForecastInfo()
+	{
+		List<WeatherInfoModel> lstInfo = new ArrayList<WeatherInfoModel>();
+		try{
+			HashMap<String, String> params = new HashMap<String, String>();
+			String param = "{\"Function\":\"forcastdata.citys\",\"CustomParams\":{},\"Type\":2}";
+			params.put("param",  param);
+			JSONArray array = HttpHelper.load(HttpHelper.GET_WEATHER_BY_CITY_URL,params,HttpHelper.METHOD_POST);
+			
+			for(int i =0;i< array.length();i++)
+			{
+				WeatherInfoModel  modle = new WeatherInfoModel();
+				Object obj =array.get(i);
+				JSONObject jo = new JSONObject(obj.toString());	
+				modle.lat =new LatLng ( Double.valueOf( jo.get("lat").toString()), Double.valueOf( jo.get("lon").toString()));
+				//modle.strTemp = String.valueOf( (Double.valueOf(jo.getString("drybultemp").toString())/10));
+			    modle.strTemp = String.valueOf(Double.valueOf(jo.getString("drybultemp").toString()))+"°C";
+				modle.strWeaState = jo.getString("code").toString();//对应天气图片编码
+				lstInfo.add(modle);
+			}
+		}
+		catch(Exception e)
+		{
+		    e.printStackTrace();  
+		}
+		return lstInfo;
+	}
+
+	
+public class WeatherInfoModel
+{
+	public String strTemp;
+	public String strWeaState;
+	public LatLng lat;
+	public WeatherInfoModel()
+	{
+		strTemp=strWeaState="";
+		lat = new LatLng(0,0);
+	}
+}
+	
+public class RenderModle
+{
+	private String key;
+	private List<String> lstValue;
+	private String strColorCap;
+	private String unit;
+	public RenderModle()
+	{
+		key ="";
+		strColorCap="";
+		unit = "";
+		lstValue = new ArrayList<String>();
+	}
+	
+	public RenderModle setValues(String Value,String strColorCap)
+	{
+		this.lstValue.add(Value);
+		this.strColorCap =strColorCap;
+		return this;
+	}
+	public RenderModle setKey(String key)
+	{
+		this.key = key;
+		return this;
+	}
+	
+	public RenderModle setUnit(String unit)
+	{
+		this.unit = unit;
+		return this;
+	}
+
+	
+	public  List<String> GetValue()
+	{
+		return lstValue;
+	}
+	public  String Getkey()
+	{
+		return key;
+	}
+	
+	public  String GetColorCap()
+	{
+		return strColorCap;
+	}
+
+	public String getUnit() {
+		return unit;
+	}
+	
+	
+	}
+
+}
+

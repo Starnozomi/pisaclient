@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">                 
+         <item android:state_pressed="true">
+             		<shape>  
+                    <!-- shape 表示是圆角矩形 -->
+				    <!-- 设置背景颜色 -->
+				    <solid android:color="#ffff9b1a" />
+				    <!-- 设置边框线的宽度 -->
+				    <stroke android:width="1dp"  android:color="#ffff9b1a" />
+				    <!-- 设置圆角大小 -->
+				     <corners android:topLeftRadius="0dp"     
+				             android:topRightRadius="0dp"      
+				             android:bottomRightRadius="10dp"     
+				             android:bottomLeftRadius="10dp"/>  
+				   </shape>  
+	 </item>
+       <item android:state_pressed="false">
+          			 <shape>  
+                    <!-- shape 表示是圆角矩形 -->
+				    <!-- 设置背景颜色 -->
+				    <solid android:color="#ff44b33a" />
+				    <!-- 设置边框线的宽度 -->
+				    <stroke android:width="1dp"  android:color="#ff44b33a" />
+				    <!-- 设置圆角大小 -->
+				     <corners android:topLeftRadius="0dp"     
+				             android:topRightRadius="0dp"      
+				             android:bottomRightRadius="10dp"     
+				             android:bottomLeftRadius="10dp"/>  
+				     </shape>  
+	 </item>
+</selector>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp" >
+	
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+     >
+     
+        <TextView 
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+       		android:textColor="@color/black"
+       		android:text="设备名称"
+       		android:layout_marginLeft="10dip"
+       		android:layout_marginTop="10dip"
+       		android:textStyle="bold"
+       	/>
+        
+         <TextView 
+            android:id="@+id/tv_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+       		android:textColor="@color/gray"
+       		android:text="所在分组"
+       		android:layout_marginTop="10dip"
+       		android:layout_marginLeft="5dip"
+       		android:layout_toRightOf="@+id/tv_name"
+       />
+        
+       <TextView 
+            android:id="@+id/tv_latest_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+       		android:textColor="@color/gray"
+       		android:text="最新观测值"
+       		android:layout_below="@+id/tv_name"
+       		android:layout_marginLeft="10dip"
+       		android:layout_marginTop="10dip"
+       />
+          
+       <TextView 
+            android:id="@+id/tv_latest_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+       		android:textColor="@color/gray"
+       		android:text="观测时间"
+       		android:layout_below="@+id/tv_name"
+       		android:layout_toRightOf="@+id/tv_latest_value"
+       		android:layout_marginLeft="10dip"
+       		android:layout_marginTop="10dip"
+       />
+  	
+      	<Switch  
+	        android:id="@+id/switcher"  
+	        android:typeface="normal"  
+	        android:thumb="@drawable/switch_thumb_selector"
+          	android:track="@drawable/switch_track_selector" 
+   			android:switchMinWidth="50dip"
+            android:thumbTextPadding="15dip"
+            android:textOn=""
+            android:textOff=""
+	        android:layout_width="wrap_content"  
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="10dip"
+	        android:checked="false"
+            android:longClickable="false"
+        />       
+         
+      
+    </RelativeLayout>
+    
+</LinearLayout>

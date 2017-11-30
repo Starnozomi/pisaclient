@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myViewXmlns="http://schemas.android.com/apk/res/com.supermap.pisaclient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_score"
+    android:padding="5dp"
+    android:orientation="horizontal"
+     >
+    <TextView 
+        android:id="@+id/tv_crop_comment"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        />
+	<com.supermap.pisaclient.common.views.SmallTextButton
+	    android:id="@+id/bn_score"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    myViewXmlns:textColor="@color/white"
+	    myViewXmlns:textSize="@dimen/font_size_small_mini"
+	    myViewXmlns:background="@drawable/adv_score_button_broder"
+	    android:gravity="center_vertical"
+	    android:visibility="invisible"
+	    /> 
+	    
+	<!-- android:textColor="@color/white"
+	    android:textSize="@dimen/font_size_mini" --> 
+</LinearLayout>

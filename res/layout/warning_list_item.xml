@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dp"
+    android:orientation="horizontal" >
+    <ImageView
+        android:id="@+id/iv_warning_tpye"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/wt_warning"
+        android:contentDescription="@string/no_desc" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+        
+        <TextView
+            android:id="@+id/tv_warning_create_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="2dp"
+            android:textColor="@color/font_default"
+            android:text="标题"
+            android:textSize="@dimen/font_size_small" />
+
+        <TextView
+            android:id="@+id/tv_warning_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="一查的发的嘎嘎的发的灌灌灌灌的方法撒啊啊发发发发发"
+            android:lineSpacingExtra="2dp"
+            android:lines="3"
+            android:textColor="@color/font_default"
+            android:textSize="@dimen/font_size_default" />
+
+    </LinearLayout>
+
+ 
+</LinearLayout>

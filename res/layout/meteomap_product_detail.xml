@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pup_Window_Layout"
+    android:orientation="vertical" >
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dip"
+        android:background="@drawable/one_map_pup_bg"
+        android:orientation="vertical" >
+        
+        	<RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="50dip"
+		        android:layout_marginTop="10dip"
+		       	 android:layout_marginBottom="5dip"
+		         >
+		         
+        	    <TextView 
+        	        android:id="@+id/tv_vipname"
+        	        android:layout_width="wrap_content" 
+        	        android:layout_height = "wrap_content"
+        	        android:textColor="@color/black"
+        	        android:layout_centerVertical="true"
+        	        android:textSize="16dip"        	        
+        	        android:layout_marginLeft="10dip"
+        	        android:text="产品详情"
+        	        />
+        		 
+        	    
+        	    
+        	    
+        	    <ImageView 
+        	        android:id="@+id/ib_close"
+        	        android:layout_width="30dip"
+        	        android:layout_height="30dip"
+        	        android:src="@drawable/umeng_update_close_bg_normal"
+        	        android:layout_alignParentRight="true"
+        	        android:layout_marginRight="10dip"
+        	        android:layout_marginTop="10dip"
+        	        />
+        	    
+        	    
+        	    <TextView 
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="0.5dip"
+        	        android:layout_alignParentBottom="true"
+        	        android:background="@color/gray"
+        	        />
+        	    
+        	    
+        	</RelativeLayout>
+        	
+        	<LinearLayout 
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="wrap_content"
+        	    android:orientation="vertical"
+        	    android:padding="10dip"
+        	    
+        	    >
+        	    	<TextView 
+        	    android:id="@+id/tvTitle"
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="wrap_content"
+        	    android:gravity="left"
+        	    android:padding="5dip"
+        	    android:text="标题"
+        	    />	
+        	    
+        	  
+       	
+        	      <TextView 
+	        	    android:id="@+id/tvTime"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:gravity="left"
+	        	    android:padding="5dip"
+	        	    android:text="2016-10-18 23:10:10"
+        	    />	
+        	    
+        	       <TextView 
+	        	    android:id="@+id/tvFarmName"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:gravity="left"
+	        	    android:padding="5dip"
+	        	    android:text="农田"
+        	    />	
+        	    
+        	         <TextView 
+	        	    android:id="@+id/tvType"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:gravity="left"
+	        	    android:padding="5dip"
+	        	    android:text="专家产品"
+        	    />	
+        	    
+        	      <TextView 
+	        	    android:id="@+id/tvContent"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:gravity="left"
+	        	    android:padding="5dip"
+	        	    android:text="内容"
+	        	    android:lineSpacingMultiplier ="1.8"
+        	    />	
+        	</LinearLayout>
+        	
+
+        </LinearLayout>
+
+
+   
+
+</LinearLayout>

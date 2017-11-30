@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="division_line">#dcdcdc</color>
+    <color name="black">#ff000000</color>
+    <color name="red">#ffff0000</color>
+    <color name="green">#ff00ff00</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="transparent">#00000000</color>
+    <color name="today">#ff00ffcc</color>
+    <color name="white">#ffffffff</color>
+    <color name="miniwhite">#fffafafa</color>
+    <color name="pressed">#cccccccc</color>
+    <color name="selected">#cccccccc</color>
+    <color name="focused">#cccccccc</color>
+    <color name="font_default_old">#ff000000</color>
+    <color name="font_default">#ff4a4a4a</color>
+    <color name="font_user_name">#ff77be30</color>
+    <color name="weather_font_color">#ffffffff</color>
+    <color name="menu_color">#ff8ad044</color>
+    <color name="menu_color_old">#ff000000</color>
+    <color name="menu_title_selected">#ffee8425</color>
+    <color name="menu_title_bg">#ffdcdcdc</color>
+    <color name="menu_title">#ff2980c4</color>
+    <color name="item_background">#D0D0D0</color>
+    <color name="title_background">#429ec6</color>
+    <color name="content_background">#D0D0D0</color>
+    <color name="content_color">#000000</color>
+    <color name="selector_background">#DAA520</color>
+    <color name="farm_menu_color">#fff0f0f0</color>
+    <color name="farm_menu_line_color">#ff75ca00</color>
+    <color name="product_text_color">#ff696969</color>
+    <color name="product_background_color">#ffeff4fb</color>
+    <color name="setting_line">#ffa7aaaf</color>
+    <color name="add">#ffa7aaaf</color>
+    <color name="pink">#ffffccff</color>
+    <color name="country_color">#ff4294fa</color>
+    <color name="feed_odd_color">#fff5f5f5</color>
+    <color name="feed_odd_text_color">#ff4196ff</color>
+    <color name="feed_even_color">#fffafafa</color>
+    <color name="feed_even_text_color">#ff383535</color>
+    <color name="adv_back_color">#ff8ad044</color>
+    <color name="set_up_color">#ff727272</color>
+    <color name="set_down_color">#fffcfcfc</color>
+    
+    <color name="gray">#666</color>
+     <color name="moreinfo">#999</color>
+    
+    <color name="listview_item_normal">#eef0ed</color>
+    <color name="listview_item_pressed">#d4d4d4</color>
+    
+    <color name="meteomap_topbar_bg">#77be30</color>
+</resources>

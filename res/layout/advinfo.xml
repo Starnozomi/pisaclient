@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pup_Window_Layout"
+    android:orientation="vertical" >
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dip"
+        android:background="@drawable/one_map_pup_bg"
+        android:orientation="vertical" >
+        
+        	<RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="40dip"
+		         >
+		         
+        	    <TextView 
+        	        android:id="@+id/tv_advinfotitle"
+        	        android:layout_width="wrap_content" 
+        	        android:layout_height = "wrap_content"
+        	        android:layout_centerVertical="true"
+        	        android:textSize="16dip"        	        
+        	        android:layout_marginLeft="10dip"
+        	        android:textColor="@color/black"
+        	        android:text="咨询详情"
+        	        />
+        
+        	    <ImageView 
+        	        android:id="@+id/ib_close"
+        	        android:layout_width="30dip"
+        	        android:layout_height="30dip"
+        	        android:src="@drawable/umeng_update_close_bg_normal"
+        	         android:layout_centerVertical="true"
+        	        android:layout_alignParentRight="true"
+        	        android:layout_marginRight="10dip"
+        	        />
+        	    
+        	    
+        	    <TextView 
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="0.5dip"
+        	        android:layout_alignParentBottom="true"
+        	        android:background="@color/green"
+        	        />
+        	    
+        	    
+        	</RelativeLayout>
+ 			
+        	
+        	<RelativeLayout
+        	    android:id="@+id/rlAdvInfoBox"
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="wrap_content"
+        	    android:padding="5dip"
+        	    >
+        	    <ImageView 
+        	        android:id="@+id/iv_sender_image"
+        	        android:layout_width="60dip"
+        	        android:layout_height="60dip"
+        	        android:src="@drawable/user_no" />
+
+        	    <TextView
+        	        android:id="@+id/tv_sender_name"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:layout_alignTop="@+id/iv_sender_image"
+        	        android:layout_toRightOf="@+id/iv_sender_image"
+        	        android:layout_marginLeft="5dip"
+        	        android:text="sendername"
+        	        android:textColor="@color/green"
+        	        android:textSize="18dip" />
+
+        	    <TextView
+        	        android:id="@+id/tv_question"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:layout_alignLeft="@+id/tv_sender_name"
+        	        android:layout_below="@+id/tv_sender_name"
+        	        android:layout_marginTop="10dip"
+        	        android:text="莴笋如何防范开裂和空心莴笋如何防范开裂和空心莴笋如何防范开裂和空心莴笋如何防范开裂和空心莴笋如何防范开裂和空心莴笋如何防范开裂和空心莴笋如何防范开裂和空心" />
+        	    
+        	    
+        	    <TextView
+        	        android:id="@+id/tv_crop"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:layout_alignLeft="@+id/tv_sender_name"
+        	        android:layout_below="@+id/tv_question"
+        	        android:layout_marginTop="10dip"
+        	        android:text="玉米"
+        	        android:textColor="@color/black"
+        	        />
+        	    
+        	    
+        	    <TextView
+        	        android:id="@+id/tv_from"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:layout_alignParentRight="true"
+        	        android:layout_below="@+id/tv_question"
+        	        android:layout_marginTop="10dip"
+        	        android:layout_marginRight="5dip"
+        	        android:text="11月3日 璧山区"
+        	        android:textColor="@color/black"
+        	        />
+        	    
+        	
+        	</RelativeLayout>
+        	
+        	
+ 			
+	</LinearLayout>
+</LinearLayout>

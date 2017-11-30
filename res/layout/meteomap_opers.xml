@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pup_Window_Layout"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:background="@drawable/one_map_pup_bg"
+       	android:layout_marginLeft = "20dip"
+        android:orientation="horizontal" >
+        
+        <Button 
+             android:id="@+id/btnAddVip"
+           android:layout_width="40dip"
+           android:layout_height="40dip"
+           android:background="@drawable/meteomap_menubg_normal"
+           android:layout_gravity="center"
+           android:layout_marginLeft="10dip"
+           android:layout_marginRight="10dip"
+           android:gravity="center|center"
+           android:text="注册"
+           />
+        
+        
+         <Button 
+             android:id="@+id/btnAddFarmland"
+           android:layout_width="40dip"
+           android:layout_height="40dip"
+           android:background="@drawable/meteomap_menubg_normal"
+           android:layout_gravity="center"
+           android:layout_marginLeft="10dip"
+           android:layout_marginRight="10dip"
+           android:gravity="center|center"
+           android:text="农田"
+           />
+        
+		 <Button 
+		     android:id="@+id/btnAddArgInfo"
+           android:layout_width="40dip"
+           android:layout_height="40dip"
+           android:background="@drawable/meteomap_menubg_normal"
+           android:layout_gravity="center"
+           android:layout_marginLeft="10dip"
+           android:layout_marginRight="10dip"
+           android:gravity="center|center"
+           android:text="农情"
+           />
+		 
+		  <Button
+		   
+		   android:id="@+id/btnAddVis"
+           android:layout_width="40dip"
+           android:layout_height="40dip"
+           android:background="@drawable/meteomap_menubg_normal"
+           android:layout_gravity="center"
+           android:layout_marginLeft="10dip"
+           android:layout_marginRight="10dip"
+           android:gravity="center|center"
+           android:text="咨询"
+           />
+    </LinearLayout>
+
+</LinearLayout>

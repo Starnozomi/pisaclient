@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/iv_header"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/default_header"
+                android:contentDescription="@string/no_desc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/edit_header" >
+            </TextView>
+        </LinearLayout>
+
+       <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/card_layout" 
+            android:orientation="vertical"  
+            android:layout_margin="5dp"        
+            >                  
+        
+        <LinearLayout
+            android:id="@+id/ll_showname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" 
+            android:padding="2dp"             
+            >
+
+            <TextView
+                android:layout_width="@dimen/text_width_default"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="@string/user_showname"
+                android:textColor="@color/black" />
+
+            <com.supermap.pisaclient.common.views.LineEditText
+                android:id="@+id/et_username"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入姓名/企业名"
+                android:inputType="text"
+                android:padding="3dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="2dp" 
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="@dimen/text_width_default"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="@string/user_loginname"
+                android:textColor="@color/black" />
+
+            <com.supermap.pisaclient.common.views.LineEditText
+                android:id="@+id/et_loginname"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="text"
+                android:padding="3dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pwd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="2dp" >
+
+            <TextView
+                android:id="@+id/tv_pwd"
+                android:layout_width="@dimen/text_width_default"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="@string/user_pwd"
+                android:textColor="@color/black" />
+
+            <com.supermap.pisaclient.common.views.LineEditText
+                android:id="@+id/et_pwd"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:hint="请设置登录密码"
+                android:padding="3dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+  
+        
+        <LinearLayout
+            android:id="@+id/ll_repwd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="2dp" >
+
+            <TextView
+                android:id="@+id/tv_re_pwd"
+                android:layout_width="@dimen/text_width_default"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="@string/user_re_pwd"
+                android:textColor="@color/black" />
+
+            <com.supermap.pisaclient.common.views.LineEditText
+                android:id="@+id/et_re_pwd"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:hint="请再次输入登录密码"
+                android:padding="3dp"
+                android:textColor="@color/black" />
+        </LinearLayout>    
+        
+        <LinearLayout
+            android:id="@+id/ll_rerepwd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:visibility="gone"
+            android:padding="2dp" >
+
+            <TextView
+                android:id="@+id/tv_re_re_pwd"
+                android:layout_width="@dimen/text_width_default"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="@string/user_re_pwd"
+                android:textColor="@color/black" />
+
+            <com.supermap.pisaclient.common.views.LineEditText
+                android:id="@+id/et_re_re_pwd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:padding="3dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+      
+      <LinearLayout
+            android:id="@+id/ll_prompt4"
+            android:layout_width="fill_parent"
+            android:layout_height="15dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="手机号为登录时的账号"
+                android:textSize="13sp"                
+                android:textColor="@color/red" />
+
+        </LinearLayout>  
+        
+      <LinearLayout
+            android:id="@+id/ll_tel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="2dp" >
+
+            <TextView
+                android:layout_width="@dimen/text_width_default"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="@string/user_tel"
+                android:textColor="@color/black" />
+
+            <com.supermap.pisaclient.common.views.LineEditText
+                android:id="@+id/et_tel"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:maxLength="11"
+                android:inputType="phone|number"
+                android:padding="3dp"
+                android:hint="请输入手机号 "
+                android:textColor="@color/black" />
+        </LinearLayout>
+</LinearLayout>
+
+       
+        <LinearLayout
+            android:id="@+id/ll_about_area"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_circle_border"
+            android:orientation="horizontal"
+            android:padding="2dp" >
+
+            <TextView
+                android:layout_width="@dimen/text_width_default"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="@string/about_area"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/about_province"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_about_area_style"
+                android:contentDescription="@string/no_desc" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_country"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_circle_border"
+            android:padding="6dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/about_country"
+                android:gravity="center"
+                android:textColor="@color/country_color" />
+            
+            <TextView
+                android:id="@+id/tv_countries"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/select_country"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        
+        <RelativeLayout 
+            android:id="@+id/rl_workstation"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+             android:background="@drawable/edit_circle_border"
+             android:visibility="gone"
+            >
+            	<TextView 
+            	    android:id="@+id/tvSelectWorkStation"
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:layout_alignParentLeft="true"
+            	    android:layout_centerVertical="true"
+            	    android:text="申请加入基地"
+            	    android:textColor="@color/black"
+            	    android:layout_marginLeft="10dip"/>
+            	<ImageView 
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+					android:src="@drawable/more_arrow"
+					android:layout_alignParentRight="true"
+            	    android:layout_centerVertical="true"
+					android:layout_marginRight="10dip"/>
+            
+        </RelativeLayout>
+        
+        
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_reg"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/btn_normal" 
+        android:text="@string/reg"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_default" >
+    </Button>
+
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/btn_common_edit_style"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_default"
+        android:visibility="gone" >
+    </Button>
+
+</RelativeLayout>

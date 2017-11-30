@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#EEEEE0">
+    
+    <!-- <RelativeLayout
+        android:id="@+id/rl_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="52dp"
+        android:background="@color/meteomap_topbar_bg"   >
+
+        <ImageButton
+            android:id="@+id/ibtn_back"
+            android:layout_width="52dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"
+            android:background="@drawable/menu_button_selector"
+            android:contentDescription="@string/no_desc"/>
+                    
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/about"
+            android:textColor="@color/white"
+            android:textSize="19sp" 
+            android:background="@drawable/menu_button_selector"
+            />       
+            </RelativeLayout> -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:src="@drawable/app_ico" />
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/app_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/app_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/app_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:text="版本号: "
+            android:textColor="#696969"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/app_version"
+            android:layout_marginTop="21dp"
+            android:visibility="invisible"
+            android:layout_toLeftOf="@+id/app_name"
+            android:text="官方网站:"
+            android:textColor="#696969"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignLeft="@+id/app_version"
+            android:text="http://www.supermap.com"
+            android:visibility="invisible"
+            android:textColor="#008B8B"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="32dp"
+            android:textSize="10sp"
+            android:textColor="#696969"
+            android:text="Copyright 2013-2017 超图" />
+
+        <ImageView
+            android:id="@+id/app_qr"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:visibility="invisible"
+            android:layout_above="@+id/textView4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="47dp"
+            android:src="@drawable/app_qr" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/app_qr"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="扫描二维码下载掌上通"
+            android:textSize="13sp" />
+
+        <RelativeLayout
+            android:id="@+id/app_update"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:visibility="invisible"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="42dp"
+            android:background="#fff" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11dp"
+                android:text="升级新版本" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/arrow_blue" />
+            
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pup_Window_Layout"
+    android:orientation="vertical" >
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/one_map_pup_bg"
+        android:orientation="vertical" >
+        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		       	 android:orientation="horizontal"
+		       	 android:layout_marginTop="5dip"
+		       	 android:layout_marginBottom="5dip"
+		       	>
+		        	
+        	   		 <TextView 
+		        	    android:layout_width="100dip"
+		        	   android:layout_height="30dip"
+		        	    android:gravity="right|center"
+		        	    android:layout_marginRight="10dip"
+		        	    android:textColor="@color/black"
+		        	    android:text="大户名称："
+		        	    />	
+        	    <TextView 
+		        	    android:id="@+id/tv_contact"
+		        	    android:layout_width="wrap_content"
+		        	    android:layout_height="wrap_content"
+		        	    android:gravity="left|center"
+		        	    android:textColor="@color/black"
+		        	    android:text="璧山区七塘整镇蔬菜基地"
+		        	    />
+		        	
+        	</LinearLayout>
+        	
+        
+          <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		       	 android:orientation="horizontal"
+		       	 android:layout_marginTop="5dip"
+		       	 android:layout_marginBottom="5dip"
+		       	>
+		        	
+        	   		 <TextView 
+		        	    android:layout_width="100dip"
+		        	   android:layout_height="30dip"
+		        	    android:gravity="right|center"
+		        	    android:layout_marginRight="10dip"
+		        	    android:textColor="@color/black"
+		        	    android:text="农田位置："
+		        	    />	
+        	    <TextView 
+		        	    android:id="@+id/tv_contact3"
+		        	    android:layout_width="wrap_content"
+		        	    android:layout_height="wrap_content"
+		        	    android:gravity="left|center"
+		        	    android:textColor="@color/black"
+		        	    android:text="璧山区 七塘镇"
+		        	    />
+		        	
+        	</LinearLayout>
+        
+        
+        
+         <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		       	 android:orientation="horizontal"
+		       	 android:layout_marginTop="5dip"
+		       	 android:layout_marginBottom="5dip"
+		       	>
+		        	
+        	   		 <TextView 
+		        	    android:layout_width="100dip"
+		        	   android:layout_height="30dip"
+		        	    android:gravity="right|center"
+		        	    android:layout_marginRight="10dip"
+		        	    android:textColor="@color/black"
+		        	    android:text="主要产品："
+		        	    />	
+        	    <TextView 
+		        	    android:id="@+id/tv_contact1"
+		        	    android:layout_width="wrap_content"
+		        	    android:layout_height="wrap_content"
+		        	    android:gravity="left|center"
+		        	    android:textColor="@color/black"
+		        	    android:text="大白菜"
+		        	    />
+		        	
+        	</LinearLayout>
+     
+        	<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		       	 android:orientation="horizontal"
+		       	 android:layout_marginTop="5dip"
+		       	 android:layout_marginBottom="5dip"
+
+		       	>
+		        	
+        	   		 <TextView 
+		        	    android:layout_width="100dip"
+		        	    android:layout_height="30dip"
+		        	    android:gravity="right|center"
+		        	    android:layout_marginRight="10dip"
+		        	    android:textColor="@color/black"
+		        	    android:text="生产规模："
+		        	    />	
+        	    
+		        	<TextView 
+		        	    android:id="@+id/tv_ability"
+		        	    android:layout_width="wrap_content"
+		        	    android:layout_height="wrap_content"
+		        	    android:gravity="left|center"
+		        	    android:textColor="@color/black"
+		        	    android:text="50亩"
+		        	    />
+        	</LinearLayout>
+        	
+        	
+        	
+        	<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		       	 android:orientation="horizontal"
+		       	 android:layout_marginTop="5dip"
+		       	 android:layout_marginBottom="5dip"
+		       	 android:layout_marginLeft="20dip"
+		       	 android:layout_marginRight="20dip"
+		       	>
+		        	<TextView 
+		        	    android:layout_width="fill_parent"
+		        	    android:layout_height="40dip"
+		        	    android:text="联系TA"
+		        	    android:textColor="@color/black"
+		        	    android:layout_weight="1"
+		        	    android:gravity="center|center"
+		        	    android:background="@color/product_background_color"
+		        	    />
+        	   		
+		        	<TextView 
+		        	    android:layout_width="fill_parent"
+		        	    android:layout_height="40dip"
+		        	    android:text="电商平台"
+		        	    android:textColor="@color/black"
+		        	    android:layout_weight="1"
+		        	   android:gravity="center|center"
+		        	    android:background="@color/product_background_color"
+		        	    />
+        	    	
+        	</LinearLayout>
+        	
+        	
+        	
+       		<LinearLayout 
+       		    android:orientation="horizontal"
+       		    android:layout_width="fill_parent"
+       		    android:layout_height="fill_parent"
+       		    android:layout_marginTop="20dip"
+       		    >
+       		    
+       		   <ImageView 
+       		       android:layout_width="100dip"
+       		       android:layout_height="100dip"
+       		       android:layout_margin="10dip"
+       		       android:src="@drawable/farm_default"
+       		   />
+       		   
+       		   <ImageView 
+       		       android:layout_width="100dip"
+       		       android:layout_height="100dip"
+       		       android:layout_margin="10dip"
+       		       android:src="@drawable/farm_default"
+       		   />
+       		   
+       		   <ImageView 
+       		       android:layout_width="100dip"
+       		       android:layout_height="100dip"
+       		       android:layout_margin="10dip"
+       		       android:src="@drawable/farm_default"
+       		   />
+       		    
+       		</LinearLayout>
+	
+       		</LinearLayout>
+
+
+   
+
+</LinearLayout>

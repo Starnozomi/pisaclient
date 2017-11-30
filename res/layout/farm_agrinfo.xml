@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+ <TextView 
+  	    android:id="@+id/tv_noarginfo"
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:layout_centerInParent="true"
+  	    android:text="暂时没有获取到农情信息信息"
+  	    android:visibility="gone"
+  	    /> 
+   <com.supermap.pisaclient.pullrefresh.PullToRefreshListView
+        android:id="@+id/refreshable_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+	    android:layout_weight="1"
+	    android:layout_above="@+id/btn_send"
+        >
+    </com.supermap.pisaclient.pullrefresh.PullToRefreshListView>
+  	
+  		<Button 
+  		    android:id="@+id/btn_send"
+  		    android:layout_width="fill_parent"
+  		    android:layout_height="50dip"
+  		    android:text="我要上报"
+  		    android:layout_alignParentBottom="true"
+  		    android:background="@drawable/btn_normal"
+  		    android:layout_margin="10dip"
+  		    android:textColor="@color/white"
+  		    />
+  	
+</RelativeLayout>

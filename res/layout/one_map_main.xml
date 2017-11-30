@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.OneMapActivity" >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <com.supermap.pisaclient.common.views.CropInListview
+        android:id="@+id/cropInListview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imgView"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="34dp"
+        android:layout_marginLeft="34dp" >
+    </com.supermap.pisaclient.common.views.CropInListview>
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+       	android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/layers_button"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButtonNextPic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imgView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/right_up"
+        android:visibility="gone"
+         />
+
+    <ImageButton
+        android:id="@+id/imageButtonPrePic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/imageButtonNextPic"
+        android:layout_marginLeft="14dp"
+        android:src="@drawable/left_down"
+        android:visibility="gone"
+         />
+
+    
+    	<LinearLayout
+    	    android:orientation="vertical"
+    	    android:id="@+id/ll_legend"
+    	    android:layout_width="100dip"
+        	android:layout_height="150dip"
+        	android:layout_alignParentLeft="true"
+        	android:layout_alignParentBottom="true"
+        	android:layout_marginLeft="5dip"
+        	android:layout_marginBottom="45dip"
+        	android:padding="5dip"
+        	android:background="@drawable/border"  
+        	android:visibility="gone"
+        	>
+    	    <TextView 
+    	        android:id="@+id/tv_unit"
+    	       	android:layout_width="fill_parent"
+        		android:layout_height="25dip"
+        		android:gravity="center|center"
+        		android:text="图例"
+        		
+        	 />
+    	    <ListView 
+    	        android:id="@+id/list_legend"
+    	        android:divider="#00000000"
+    	        android:dividerHeight="3dip"
+    	        android:layout_width="fill_parent"
+    	        android:layout_height="fill_parent"
+    	        ></ListView>
+    	</LinearLayout>
+    	
+    	<TextView 
+    	    android:id="@+id/tv_title"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="24dip"
+    	    android:textSize="16sp"
+    	    android:gravity="center|center"
+    	    android:layout_alignParentTop="true"
+    	    android:layout_marginTop="8dip"
+    	    android:visibility="gone"
+    	    />
+    	
+  
+</RelativeLayout>

@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.MeteoMapActivity" >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <RelativeLayout 
+        android:id="@+id/rlTopBar"
+        android:layout_width="fill_parent"
+        android:layout_height="52dip"
+        android:layout_alignParentTop="true"
+        android:background="@color/meteomap_topbar_bg"  >
+        	<ImageView 
+        	    android:id="@+id/ivAccount"
+        	    android:layout_alignParentLeft="true"
+        	    android:layout_centerVertical="true"
+        	    android:layout_marginLeft="10dip"
+        	    android:layout_width="24dip"
+        	    android:layout_height="24dip"
+        	    android:src="@drawable/meteomap_account"
+        	    android:visibility="gone"
+        	    /> 
+        	    
+        	    <ImageView 
+	        	    android:id="@+id/ivMsg"
+	        	    android:layout_alignParentLeft="true"
+	        	    android:layout_centerVertical="true"
+	        	    android:layout_marginLeft="10dip"
+	        	    android:layout_width="24dip"
+	        	    android:layout_height="24dip"
+	        	    android:src="@drawable/meteomap_msg"
+        	    />
+        	
+        		<LinearLayout 
+        		    android:id="@+id/llLocationBox"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:orientation="horizontal"
+        		    android:layout_centerInParent="true"  >
+        		    	<ImageView 
+        		    	    android:layout_width="16dip"
+        		    	    android:layout_height="16dip"
+        		    	    android:src="@drawable/meteomap_location"/>
+        		    	<TextView 
+        		    	    android:id="@+id/tvLocationName"
+        		    	    android:layout_width="wrap_content"
+        		    	    android:layout_height="wrap_content"
+        		    	    android:layout_marginLeft="3dip"
+        		    	    android:textSize="16dip"
+        		    	    android:textColor="@color/white"
+        		    	    android:text="内蒙古自治区" />	
+	       		    	   <ImageView 
+	       		    	    android:layout_width="14dip"
+	       		    	    android:layout_height="16dip"
+	       		    	    android:layout_marginLeft="3dip"
+	       		    	    android:visibility="invisible"
+	       		    	    android:layout_gravity="center"
+	       		    	    android:src="@drawable/meteomap_dropdown" />
+        		            </LinearLayout>
+        	
+        	
+        	
+        	<ImageView 
+        	    android:id="@+id/ivSetting"
+        	    android:layout_alignParentRight="true"
+        	    android:layout_centerVertical="true"
+        	    android:layout_marginRight="10dip"
+        	    android:layout_width="24dip"
+        	    android:layout_height="24dip"
+        	    android:src="@drawable/meteomap_setting"
+        	    />
+    </RelativeLayout>
+    
+    
+    
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:id="@+id/llTopMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="70dip"
+        android:background="@drawable/meteomap_topmenu_bg"
+        android:layout_below="@+id/rlTopBar"
+        android:visibility="gone"
+        >
+
+       <Button
+           android:id="@+id/vAlarm"
+           android:layout_width="50dip"
+           android:layout_height="50dip"
+           android:layout_gravity="center"
+           android:layout_marginLeft="10dip"
+           android:layout_marginRight="10dip"
+           android:background="@drawable/meteomap_menu_icon_alarm_on"
+           android:gravity="center|center" />
+       
+         <Button 
+           android:id="@+id/vWeather"
+           android:layout_width="50dip"
+           android:layout_height="50dip"
+           android:background="@drawable/meteomap_menu_icon_weather_on"
+           android:layout_gravity="center"
+           android:layout_marginLeft="10dip"
+           android:layout_marginRight="10dip"
+           android:gravity="center|center"
+           />
+         
+           <Button 
+           android:id="@+id/vTemp"        
+           android:layout_width="50dip"
+           android:layout_height="50dip"
+           android:background="@drawable/meteomap_menu_icon_temp_on"
+           android:layout_gravity="center"
+           android:layout_marginLeft="10dip"
+           android:layout_marginRight="10dip"
+           android:gravity="center|center"
+           />
+           
+           <Button 
+               android:id="@+id/vPrecipitation"
+           android:layout_width="50dip"
+           android:layout_height="50dip"
+          android:background="@drawable/meteomap_menu_icon_pre_on"
+           android:layout_gravity="center"
+           android:layout_marginLeft="10dip"
+           android:layout_marginRight="10dip"
+           android:gravity="center|center"
+           />
+           
+           <Button 
+               android:id="@+id/vSunLight"
+	           android:layout_width="50dip"
+	           android:layout_height="50dip"
+	          android:background="@drawable/meteomap_menu_icon_sunlight_on"
+	           android:layout_gravity="center"
+	           android:layout_marginLeft="10dip"
+	           android:layout_marginRight="10dip"
+	           android:gravity="center|center"
+           />
+    </LinearLayout>
+    
+    
+    
+   <HorizontalScrollView 
+       android:id="@+id/llBottomMenu"
+       android:layout_width="fill_parent" 
+       android:layout_height="wrap_content" 
+       android:scrollbars="none"
+       android:layout_alignParentBottom="true"
+       > 
+   <LinearLayout 
+       android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="70dip"
+        android:background="@drawable/meteomap_bottommenu_bg"
+        
+        >
+		   <Button 
+	           android:id="@+id/vServiceProduct"
+	           android:layout_width="50dip"
+	           android:layout_height="50dip"
+	           android:background="@drawable/meteomap_menu_select_style"
+	           android:layout_gravity="center"
+	           android:layout_marginLeft="10dip"
+	           android:layout_marginRight="10dip"
+	           android:gravity="center|center"
+	           android:text="服务\r\n产品"
+	           android:visibility="gone"
+	     	/>    	
+      
+	       <Button 
+	            android:id="@+id/vSpecialMap"
+	           android:layout_width="50dip"
+	           android:layout_height="50dip"
+	           android:background="@drawable/meteomap_menu_select_style"
+	           android:layout_gravity="center"
+	           android:layout_marginLeft="10dip"
+	           android:layout_marginRight="10dip"
+	           android:gravity="center|center"
+	           android:visibility="gone"
+	           android:text="专题\r\n图"
+	           />
+        <Button 
+           android:id="@+id/vFarmland"
+           android:layout_width="50dip"
+           android:layout_height="50dip"
+           android:background="@drawable/meteomap_menu_select_style"
+           android:layout_gravity="center"
+           android:layout_marginLeft="10dip"
+           android:layout_marginRight="10dip"
+           android:gravity="center|center"
+           android:text="农田\r\n分布"
+           />
+
+        <Button 
+            android:id="@+id/vVip"
+           android:layout_width="50dip"
+           android:layout_height="50dip"
+          android:background="@drawable/meteomap_menu_select_style"
+           android:layout_gravity="center"
+           android:layout_marginLeft="10dip"
+           android:layout_marginRight="10dip"
+           android:gravity="center|center"
+           android:text="大户\r\n分布"
+           />
+        
+        <Button 
+            android:id="@+id/vArgInfo"
+           android:layout_width="50dip"
+           android:layout_height="50dip"
+           android:background="@drawable/meteomap_menu_select_style"
+           android:layout_gravity="center"
+           android:layout_marginLeft="10dip"
+           android:layout_marginRight="10dip"
+           android:gravity="center|center"
+           android:text="农情\r\n分布"
+           />
+        
+        <Button 
+            android:id="@+id/vAdvisory"
+           android:layout_width="50dip"
+           android:layout_height="50dip"
+           android:background="@drawable/meteomap_menu_select_style"
+           android:layout_gravity="center"
+           android:layout_marginLeft="10dip"
+           android:layout_marginRight="10dip"
+           android:gravity="center|center"
+           android:text="咨询\r\n分布"
+           android:visibility="gone"
+           />
+    </LinearLayout>
+	</HorizontalScrollView>
+   
+   <ImageView 
+       android:id="@+id/ivAdd"
+       android:layout_width="50dip"
+       android:layout_height="50dip"
+       android:src="@drawable/meteomap_add"
+       android:layout_alignParentRight="true"
+       android:layout_above="@+id/llBottomMenu"
+       android:layout_marginRight="15dip"
+       android:layout_marginBottom="15dip"
+       />
+  
+   	<RelativeLayout 
+   	    android:id="@+id/rlWeatherPanel"
+   	    android:layout_width="130dip"
+   	    android:layout_height="80dip"
+   	    android:layout_below="@+id/llTopMenu"
+   	    android:layout_alignParentLeft="true"
+   	    android:layout_marginTop="10dip"
+   	    android:layout_marginLeft ="10dip"
+   	    android:visibility="gone"
+
+   	    >
+   	    	<RelativeLayout 
+   	    	    android:id="@+id/rlLiveTop"
+   	    	    android:layout_width="wrap_content"
+   	    	    android:layout_height="30dip"
+   	    	    >
+   	    	    <TextView 
+   	    	    	android:id="@+id/tvLiveTemp"
+   	    	    	android:layout_width="wrap_content"
+   	    	    	android:layout_height = "wrap_content"
+   	    	    	android:textSize="28dip"
+   	    	    	android:layout_alignParentLeft="true"
+   	    	    	android:layout_alignParentBottom="true"
+   	    	    	android:text="23℃"
+   	    	    	android:textColor="@color/black"
+   	    	    />
+   	    	    
+   	    	    <TextView 
+   	    	    	android:id="@+id/tvLiveWeather"
+   	    	    	android:layout_width="wrap_content"
+   	    	    	android:layout_height = "wrap_content"
+   	    	    	android:layout_alignParentBottom="true"
+   	    	    	android:textSize="12dip"
+   	    	    	android:text=" 晴"
+   	    	    	android:layout_toRightOf="@+id/tvLiveTemp"
+   	    	    	android:layout_marginLeft="20dip"
+   	    	    	android:background="@color/meteomap_topbar_bg"
+   	    	    	android:paddingLeft="3dip"
+   	    	    	android:paddingRight="3dip"
+   	    	    	android:textColor="@color/white"
+   	    	    />
+   	    	   
+   	    	</RelativeLayout>
+   	    	 <TextView 
+			        android:layout_width="fill_parent"
+			        android:layout_height="0dip"
+			        android:background="@color/gray"
+			        android:layout_below="@+id/rlLiveTop"
+			        android:layout_marginTop="10dip"
+			        android:layout_marginBottom="10dip"
+		        />
+   	    	<LinearLayout 
+   	    	    	android:orientation="vertical"
+   	    	    	android:id="@+id/rlLiveBottom"
+   	    	    	android:layout_width="fill_parent"
+   	    	    	android:layout_height = "wrap_content"
+   	    	    	android:layout_alignParentBottom="true"
+   	    	    	 android:layout_marginTop="40dip"
+   	    	    >
+   	    	    <TextView 
+   	    	        android:id="@+id/tvLiveWind"
+   	    	        android:layout_width="wrap_content"
+   	    	        android:layout_height="wrap_content"
+   	    	        android:textColor="@color/black"
+   	    	        android:text="87% 	西南风微风"
+   	    	        />
+   	    	    
+   	    	     <TextView 
+   	    	        android:id="@+id/tvLiveDate"
+   	    	        android:layout_width="wrap_content"
+   	    	        android:layout_height="wrap_content"
+   	    	        android:textColor="@color/black"
+   	    	        android:text="9月13日  八月十三"
+   	    	        />
+   	    	    
+   	    	</LinearLayout>
+   	</RelativeLayout>
+   	
+   	<!-- <com.supermap.pisaclient.common.views.HorizontalListView
+        android:id="@+id/legend_listview"
+        android:layout_width="270dip"
+        android:layout_height="20dip"
+       	android:layout_alignParentLeft="true"
+       	android:layout_alignParentBottom="true"
+       	android:layout_marginLeft="5dip"
+       	android:layout_marginBottom="75dip"
+       	android:background="@drawable/border"
+       android:visibility="gone" >
+   	</com.supermap.pisaclient.common.views.HorizontalListView> -->
+   	
+   	
+   <LinearLayout
+    	    android:orientation="vertical"
+    	    android:id="@+id/ll_legend"
+    	    android:layout_width="100dip"
+        	android:layout_height="150dip"
+        	android:layout_alignParentLeft="true"
+        	android:layout_alignParentBottom="true"
+        	android:layout_marginLeft="5dip"
+        	android:layout_marginBottom="75dip"
+        	android:padding="5dip"
+        	android:background="@drawable/border"  
+        	android:visibility="gone"
+        	>
+    	    <TextView 
+    	        android:id="@+id/tv_unit"
+    	       	android:layout_width="fill_parent"
+        		android:layout_height="25dip"
+        		android:gravity="center|center"
+        		android:text="图例"
+        		
+        	 />
+    	    <ListView 
+    	        android:id="@+id/list_legend"
+    	        android:divider="#00000000"
+    	        android:dividerHeight="3dip"
+    	        android:layout_width="fill_parent"
+    	        android:layout_height="fill_parent"
+    	        ></ListView>
+    	</LinearLayout> 
+    	
+   	
+    	<TextView 
+    	    android:id="@+id/tv_title"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="24dip" 
+    	    android:textSize="16sp"
+    	    android:textColor="@color/black"
+    	    android:layout_below="@+id/llTopMenu"
+    	    android:layout_alignParentRight="true"
+    	    android:layout_marginTop="8dip"
+    	    android:layout_marginRight="8dip"
+    	    android:visibility="gone"
+    	    />
+    	
+    	
+    	<ImageView 
+    	   android:id="@+id/btn_switchmap"
+    	    android:layout_width="40dip"
+    	    android:layout_height="40dip"
+    	    android:background="@drawable/tool_bg"
+    	    android:src="@drawable/map_layer_change"
+    	    android:gravity="center|center"
+    	    android:layout_alignParentRight="true"
+    	    android:layout_marginRight="10dip"
+    	    android:layout_below="@+id/llTopMenu"
+    	    android:layout_marginTop="20dip"
+    	    android:visibility="gone"
+    	    />
+    	
+    	
+    	<ImageView
+    	    android:id="@+id/btn_myfarm"
+    	    android:layout_width="40dip"
+    	    android:layout_height="40dip"
+    	    android:background="@drawable/tool_bg"
+    	    android:src="@drawable/loc_farm"
+    	    android:gravity="center|center"
+    	    android:layout_alignParentRight="true"
+    	    android:layout_marginRight="10dip"
+    	    android:layout_below="@+id/btn_switchmap"
+    	    android:layout_marginTop="50dip"  
+    	    android:padding="2dip"
+    	    android:visibility="gone"
+    	    
+    	    />
+    	
+    	<ImageView
+    	    android:id="@+id/btn_myadvisory"
+    	    android:layout_width="40dip"
+    	    android:layout_height="40dip"
+    	    android:background="@drawable/tool_bg"
+    	    android:src="@drawable/question"
+    	    android:gravity="center|center"
+    	    android:layout_alignParentRight="true"
+    	    android:layout_marginRight="10dip"
+    	    android:layout_below="@+id/btn_myfarm"
+    	    android:layout_marginTop="20dip"  
+    	    android:padding="2dip"
+    	    android:visibility="gone"
+    	    
+    	    />
+    	
+    	
+   	
+    	
+    	
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/wt_main_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.supermap.pisaclient.common.views.DragGridView
+        android:id="@+id/dragGridView"
+        android:listSelector="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:verticalSpacing="10dip"
+        android:horizontalSpacing="10dip"
+        android:stretchMode="columnWidth"  
+  	    android:gravity="center" 
+  	    android:padding="10dp"
+        android:numColumns="3" >
+    </com.supermap.pisaclient.common.views.DragGridView>
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_size_big"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:text="@string/city_add_remind"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/transparent"
+        />
+
+</RelativeLayout>

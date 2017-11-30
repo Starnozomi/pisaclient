@@ -1,0 +1,83 @@
+{
+"type": "FeatureCollection",
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "MC": "城口县", "QXDM": "500229", "ORIG_FID": 0 }, "geometry": { "type": "Point", "coordinates": [ 108.76644576304716, 31.873404060269536 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "巫溪县", "QXDM": "500238", "ORIG_FID": 1 }, "geometry": { "type": "Point", "coordinates": [ 109.33330525453749, 31.508860529638241 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "开县", "QXDM": "500234", "ORIG_FID": 2 }, "geometry": { "type": "Point", "coordinates": [ 108.41131397392581, 31.309717318726996 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "巫山县", "QXDM": "500237", "ORIG_FID": 3 }, "geometry": { "type": "Point", "coordinates": [ 109.89464621406319, 31.116858881728717 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "云阳县", "QXDM": "500235", "ORIG_FID": 4 }, "geometry": { "type": "Point", "coordinates": [ 108.82722892092886, 31.02032053836848 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "奉节县", "QXDM": "500236", "ORIG_FID": 5 }, "geometry": { "type": "Point", "coordinates": [ 109.38754796750584, 30.888740541213963 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "万州区", "QXDM": "500101", "ORIG_FID": 6 }, "geometry": { "type": "Point", "coordinates": [ 108.38692164858566, 30.764962638276813 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "梁平县", "QXDM": "500228", "ORIG_FID": 7 }, "geometry": { "type": "Point", "coordinates": [ 107.71322370206633, 30.660150594541392 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "忠县", "QXDM": "500233", "ORIG_FID": 8 }, "geometry": { "type": "Point", "coordinates": [ 107.88713222886958, 30.313692312878061 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "石柱县", "QXDM": "500240", "ORIG_FID": 9 }, "geometry": { "type": "Point", "coordinates": [ 108.29278739890862, 30.095646609000312 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "垫江县", "QXDM": "500231", "ORIG_FID": 10 }, "geometry": { "type": "Point", "coordinates": [ 107.43194000465593, 30.255635552090837 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "潼南区", "QXDM": "500223", "ORIG_FID": 11 }, "geometry": { "type": "Point", "coordinates": [ 105.80952702702911, 30.145824191185284 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "合川区", "QXDM": "500117", "ORIG_FID": 12 }, "geometry": { "type": "Point", "coordinates": [ 106.13920403137092, 30.124317810526236 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "丰都县", "QXDM": "500230", "ORIG_FID": 13 }, "geometry": { "type": "Point", "coordinates": [ 107.82542258739369, 29.886715696782232 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "长寿区", "QXDM": "500115", "ORIG_FID": 14 }, "geometry": { "type": "Point", "coordinates": [ 107.15165276124594, 29.970981724994999 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "渝北区", "QXDM": "500112", "ORIG_FID": 15 }, "geometry": { "type": "Point", "coordinates": [ 106.84484528908615, 29.853216091953641 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "铜梁区", "QXDM": "500224", "ORIG_FID": 16 }, "geometry": { "type": "Point", "coordinates": [ 106.02478914821648, 29.627189293413892 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "北碚区", "QXDM": "500109", "ORIG_FID": 17 }, "geometry": { "type": "Point", "coordinates": [ 106.50907826086836, 29.863279199040392 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "涪陵区", "QXDM": "500102", "ORIG_FID": 18 }, "geometry": { "type": "Point", "coordinates": [ 107.3265695334718, 29.691735877737699 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "璧山区", "QXDM": "500227", "ORIG_FID": 19 }, "geometry": { "type": "Point", "coordinates": [ 106.12102345076602, 29.465885043394564 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "黔江区", "QXDM": "500114", "ORIG_FID": 20 }, "geometry": { "type": "Point", "coordinates": [ 108.70291612917265, 29.437727883630203 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "大足区", "QXDM": "500111", "ORIG_FID": 21 }, "geometry": { "type": "Point", "coordinates": [ 105.73779476979161, 29.652545121809965 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "彭水县", "QXDM": "500243", "ORIG_FID": 22 }, "geometry": { "type": "Point", "coordinates": [ 108.2607966830285, 29.35599770689646 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "巴南区", "QXDM": "500113", "ORIG_FID": 23 }, "geometry": { "type": "Point", "coordinates": [ 106.74626162649145, 29.374368470916579 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "沙坪坝区", "QXDM": "500106", "ORIG_FID": 24 }, "geometry": { "type": "Point", "coordinates": [ 106.3629177702482, 29.626947367002174 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "荣昌区", "QXDM": "500226", "ORIG_FID": 25 }, "geometry": { "type": "Point", "coordinates": [ 105.39919295266185, 29.550324811875839 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "江北区", "QXDM": "500105", "ORIG_FID": 26 }, "geometry": { "type": "Point", "coordinates": [ 106.77779636779206, 29.637363511416424 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "武隆县", "QXDM": "500232", "ORIG_FID": 27 }, "geometry": { "type": "Point", "coordinates": [ 107.70383338118097, 29.375583663269651 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "渝中区", "QXDM": "500103", "ORIG_FID": 28 }, "geometry": { "type": "Point", "coordinates": [ 106.53196879167444, 29.549230905919273 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "永川区", "QXDM": "500118", "ORIG_FID": 29 }, "geometry": { "type": "Point", "coordinates": [ 105.85428358157083, 29.282177161631694 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "九龙坡区", "QXDM": "500107", "ORIG_FID": 30 }, "geometry": { "type": "Point", "coordinates": [ 106.3222863919907, 29.330207236594561 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "大渡口区", "QXDM": "500104", "ORIG_FID": 31 }, "geometry": { "type": "Point", "coordinates": [ 106.42281742047322, 29.388665499724652 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "南川区", "QXDM": "500119", "ORIG_FID": 32 }, "geometry": { "type": "Point", "coordinates": [ 107.16607201667591, 29.137965582139827 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "江津区", "QXDM": "500116", "ORIG_FID": 33 }, "geometry": { "type": "Point", "coordinates": [ 106.21181042668451, 29.120969516761875 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "酉阳县", "QXDM": "500242", "ORIG_FID": 34 }, "geometry": { "type": "Point", "coordinates": [ 108.55880905657938, 28.900487524756386 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "綦江区", "QXDM": "500110", "ORIG_FID": 35 }, "geometry": { "type": "Point", "coordinates": [ 106.71745150878422, 28.881505644872561 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "秀山县", "QXDM": "500241", "ORIG_FID": 36 }, "geometry": { "type": "Point", "coordinates": [ 109.01214692811516, 28.494748969970601 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "南岸区", "QXDM": "500108", "ORIG_FID": 37 }, "geometry": { "type": "Point", "coordinates": [ 106.65599205582652, 29.538481047956225 ] } }
+,
+{ "type": "Feature", "properties": { "MC": "万盛区", "QXDM": "507509", "ORIG_FID": 38 }, "geometry": { "type": "Point", "coordinates": [ 106.932780, 28.961261 ] } }
+]
+}

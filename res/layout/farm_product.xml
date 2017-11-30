@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+  	 <TextView 
+  	    android:id="@+id/tv_nosuggest"
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:layout_centerInParent="true"
+  	    android:text="暂时没有获取到产品信息"
+  	    android:visibility="gone"
+  	    /> 
+  	 <ScrollView 
+  	     android:layout_width="fill_parent"
+  	     android:layout_height="fill_parent"
+  	     >
+  	      <com.supermap.pisaclient.common.views.PisaListView
+    		    android:id="@+id/lst_suggest"
+    		    android:layout_width="fill_parent"
+    		    android:layout_height="wrap_content"
+    		    android:divider="#00000000"  
+          		android:dividerHeight="0dip"  
+          		android:listSelector="@android:color/transparent" 
+    		    ></com.supermap.pisaclient.common.views.PisaListView>
+  	     
+  	 </ScrollView>  
+  	
+</RelativeLayout>

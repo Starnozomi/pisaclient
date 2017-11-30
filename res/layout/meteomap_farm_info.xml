@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pup_Window_Layout"
+    android:orientation="vertical" >
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dip"
+        android:background="@drawable/one_map_pup_bg"
+        android:orientation="vertical" >
+        
+        	<RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="50dip"
+		        android:layout_marginTop="10dip"
+		       	 android:layout_marginBottom="5dip"
+		         >
+		         
+        	    <TextView 
+        	        android:id="@+id/tv_farmname"
+        	        android:layout_width="wrap_content" 
+        	        android:layout_height = "wrap_content"
+        	        android:textColor="@color/black"
+        	        android:layout_centerVertical="true"
+        	        android:textSize="16dip"        	        
+        	        android:layout_marginLeft="10dip"
+        	        android:text="农田信息"
+        	        />
+        		 
+        	    
+        	    
+        	    
+        	    <ImageView 
+        	        android:id="@+id/ib_close"
+        	        android:layout_width="30dip"
+        	        android:layout_height="30dip"
+        	        android:src="@drawable/umeng_update_close_bg_normal"
+        	        android:layout_alignParentRight="true"
+        	        android:layout_marginRight="10dip"
+        	        android:layout_marginTop="10dip"
+        	        />
+        	    
+        	    
+        	    <TextView 
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="0.5dip"
+        	        android:layout_alignParentBottom="true"
+        	        android:background="@color/gray"
+        	        />
+        	    
+        	    
+        	</RelativeLayout>
+        	
+        	
+		   
+        	<LinearLayout 
+        	    android:orientation="horizontal"
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="wrap_content" >
+        	    
+        	    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		       	 android:orientation="horizontal"
+		       	 android:layout_marginTop="5dip"
+		       	 android:layout_marginBottom="5dip"
+		         android:layout_weight="1"
+		       	>
+		        	
+        	   		 <TextView 
+		        	    android:layout_width="100dip"
+		        	   android:layout_height="30dip"
+		        	    android:gravity="right|center"
+		        	    android:layout_marginRight="10dip"
+		        	    android:textColor="@color/black"
+		        	    android:text="主要产品："
+		        	    />	
+        	    <TextView 
+		        	    android:id="@+id/tv_contact"
+		        	    android:layout_width="wrap_content"
+		        	    android:layout_height="wrap_content"
+		        	    android:gravity="left|center"
+		        	    android:textColor="@color/black"
+		        	    android:text="大白菜"
+		        	    />
+		        	
+        	</LinearLayout>
+        	
+        	
+        	<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		       	 android:orientation="horizontal"
+		       	 android:layout_marginTop="5dip"
+		       	 android:layout_marginBottom="5dip"
+		       	  android:layout_weight="1"
+		       	>
+		        	
+        	   		 <TextView 
+		        	    android:layout_width="100dip"
+		        	    android:layout_height="30dip"
+		        	    android:gravity="right|center"
+		        	    android:layout_marginRight="10dip"
+		        	    android:textColor="@color/black"
+		        	    android:text="生产规模："
+		        	    />	
+        	    
+		        	<TextView 
+		        	    android:id="@+id/tv_ability"
+		        	    android:layout_width="wrap_content"
+		        	    android:layout_height="wrap_content"
+		        	    android:gravity="left|center"
+		        	    android:textColor="@color/black"
+		        	    android:text="50亩"
+		        	    />
+        	</LinearLayout>
+        	    
+        	</LinearLayout>
+        	
+        	
+        	
+        	
+        	<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		       	 android:orientation="horizontal"
+		       	 android:layout_marginTop="5dip"
+		       	 android:layout_marginBottom="5dip"
+		       	>
+		        	
+        	   		 <TextView 
+		        	    android:layout_width="100dip"
+		        	    android:layout_height="30dip"
+		        	    android:gravity="right|center"
+		        	    android:layout_marginRight="10dip"
+		        	    android:textColor="@color/black"
+		        	    android:text="联系方式："
+		        	    />	
+        	    <Button
+		        	    
+		        	    android:layout_width="wrap_content"
+		        	    android:layout_height="wrap_content"
+		        	    android:text="点击查看"
+		        	      android:gravity="left|center"
+		        	    />
+		        	
+        	</LinearLayout>
+        	
+        	
+        	
+       		<LinearLayout 
+       		    android:orientation="horizontal"
+       		    android:layout_width="fill_parent"
+       		    android:layout_height="fill_parent"
+       		    android:layout_marginTop="20dip"
+       		    >
+       		    
+       		   <ImageView 
+       		       android:layout_width="100dip"
+       		       android:layout_height="100dip"
+       		       android:layout_margin="10dip"
+       		       android:src="@drawable/farm_default"
+       		   />
+       		   
+       		   <ImageView 
+       		       android:layout_width="100dip"
+       		       android:layout_height="100dip"
+       		       android:layout_margin="10dip"
+       		       android:src="@drawable/farm_default"
+       		   />
+       		   
+       		   <ImageView 
+       		       android:layout_width="100dip"
+       		       android:layout_height="100dip"
+       		       android:layout_margin="10dip"
+       		       android:src="@drawable/farm_default"
+       		   />
+       		    
+       		</LinearLayout>
+			
+       		
+       		<TextView 
+       		    android:layout_width="wrap_content"
+       		    android:layout_height="wrap_content"
+       		    android:layout_marginTop="1dip"
+       		    android:textColor="@color/black"
+       		    android:layout_marginLeft="10dip"
+       		    android:text="农田实况：28 ℃ 西风微风  湿度63%"
+       		    />
+       		
+       		</LinearLayout>
+
+
+   
+
+</LinearLayout>

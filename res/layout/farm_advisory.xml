@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_main_weixin"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView 
+  	    android:id="@+id/tv_noadvisory"
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	    android:layout_centerInParent="true"
+  	    android:text="暂时没有获取到咨询信息"
+  	    android:visibility="gone"
+  	    /> 
+  	<ScrollView 
+  	     android:layout_width="fill_parent"
+  	     android:layout_height="fill_parent"
+  	     >
+  	      <com.supermap.pisaclient.common.views.PisaListView
+    		    android:id="@+id/lst_advsory"
+    		    android:layout_width="fill_parent"
+    		    android:layout_height="wrap_content"
+    		    android:divider="#00000000"  
+          		android:dividerHeight="0dip"  
+          		android:listSelector="@android:color/transparent" 
+    		    ></com.supermap.pisaclient.common.views.PisaListView>
+  	     
+  	 </ScrollView>
+  	 <Button 
+  		    android:id="@+id/btn_send"
+  		    android:layout_width="fill_parent"
+  		    android:layout_height="50dip"
+  		    android:text="我要提问"
+  		    android:layout_alignParentBottom="true"
+  		    android:background="@drawable/btn_normal"
+  		    android:layout_margin="10dip"
+  		    android:textColor="@color/white"
+  		    />
+</RelativeLayout>

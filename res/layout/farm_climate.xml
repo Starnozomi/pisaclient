@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dip"
+            android:text="历史气候数据(格点值)"
+            android:textSize="16dip" />
+
+        <TextView
+            android:id="@+id/tv_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="19dp"
+            android:text="本月"
+            android:textSize="14dip" />
+
+        <TextView
+            android:id="@+id/tv_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+     		android:layout_centerVertical="true"
+            android:layout_marginRight="62dp"
+            android:layout_toLeftOf="@+id/tv_month"
+            android:paddingRight="10dip"
+            android:text="年"
+            android:textSize="14dip" />
+
+    </RelativeLayout>
+
+ 	 <TextView 
+         android:layout_width="fill_parent"
+         android:layout_height="0.5dip"
+         android:layout_alignParentBottom="true"
+         android:background="@color/division_line"  />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip" >
+
+        <ImageView
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/ztt_rain" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dip"
+            android:text="降水（mm）"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="45dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:text="0.000"
+            android:id="@+id/tv_rain_month"
+            android:textColor="@color/gray" >
+        </TextView>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/division_line" />
+
+        <TextView
+            android:id="@+id/tv_rain_year"
+            android:layout_width="45dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="55dp"
+            android:layout_toLeftOf="@+id/tv_rain_month"
+            android:text="0.000"
+           
+            android:textColor="@color/gray" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip" >
+
+        <ImageView
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/ztt_temp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dip"
+            android:text="温度（℃）"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_temp_month"
+            android:layout_width="45dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:text="0.000"
+            android:textColor="@color/gray" >
+        </TextView>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/division_line" />
+
+        <TextView
+            android:id="@+id/tv_temp_year"
+            android:layout_width="45dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="56dp"
+
+            android:layout_toLeftOf="@+id/tv_temp_month"
+            android:text="0.000"
+            android:textColor="@color/gray" />
+
+    </RelativeLayout>
+    
+ <RelativeLayout
+     android:layout_width="fill_parent"
+     android:layout_height="45dip" >
+
+     <ImageView
+         android:layout_width="40dip"
+         android:layout_height="40dip"
+         android:layout_centerVertical="true"
+         android:layout_marginLeft="10dip"
+         android:src="@drawable/ztt_rizhao" />
+
+     <TextView
+         android:id="@+id/textView4"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+         android:layout_marginLeft="60dip"
+         android:text="日照（h）"
+         android:textColor="@color/black" />
+
+     <TextView
+         android:id="@+id/tv_sun_month"
+         android:layout_width="45dip"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_centerVertical="true"
+         android:layout_marginRight="10dip"
+         android:text="0.000"
+         android:textColor="@color/gray" >
+     </TextView>
+
+     <TextView
+         android:layout_width="fill_parent"
+         android:layout_height="0.5dip"
+         android:layout_alignParentBottom="true"
+         android:background="@color/division_line" />
+
+     <TextView
+         android:id="@+id/tv_sun_year"
+         android:layout_width="45dip"
+         android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+         android:layout_marginRight="54dp"
+         android:layout_toLeftOf="@+id/tv_sun_month"
+         android:text="0.000"
+         android:textColor="@color/gray" />
+
+ </RelativeLayout>
+    
+      <RelativeLayout
+          android:layout_width="fill_parent"
+          android:layout_height="45dip" >
+
+          <ImageView
+              android:layout_width="40dip"
+              android:layout_height="40dip"
+              android:layout_centerVertical="true"
+              android:layout_marginLeft="10dip"
+              android:src="@drawable/ztt_wind" />
+
+          <TextView
+              android:id="@+id/textView5"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:layout_marginLeft="60dip"
+              android:text="风速（m/s）"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:layout_width="fill_parent"
+              android:layout_height="0.5dip"
+              android:layout_alignParentBottom="true"
+              android:background="@color/division_line" />
+
+          <TextView
+              android:id="@+id/tv_wind_month"
+              android:layout_width="45dip"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:layout_marginRight="12dp"
+              android:text="0.000"
+              android:textColor="@color/gray" />
+
+          <TextView
+              android:id="@+id/tv_wind_year"
+              android:layout_width="45dip"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:layout_marginRight="50dp"
+              android:layout_toLeftOf="@+id/tv_wind_month"
+              android:text="0.000"
+              android:textColor="@color/gray" />
+      </RelativeLayout>
+      
+        <!-- <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        >
+        <ImageView 
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/ztt_fuhan" />
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dip"
+            android:text="年伏旱频率"
+            android:textColor="@color/black"
+            />
+        
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="10dip"
+           android:text="4%"
+           android:textColor="@color/gray"
+           ></TextView> 
+       
+        <TextView 
+    		         android:layout_width="fill_parent"
+    		         android:layout_height="0.5dip"
+    		         android:layout_alignParentBottom="true"
+    		         android:background="@color/division_line"  />
+        
+    </RelativeLayout> -->
+   
+        
+    <!-- <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        >
+        <ImageView 
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/ztt_baoyu" />
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dip"
+            android:text="年暴雨日数"
+            android:textColor="@color/black"
+            />
+        
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="10dip"
+           android:text="5天"
+           android:textColor="@color/gray"
+           ></TextView> 
+       
+        <TextView 
+    		         android:layout_width="fill_parent"
+    		         android:layout_height="0.5dip"
+    		         android:layout_alignParentBottom="true"
+    		         android:background="@color/division_line"  />
+        
+    </RelativeLayout> -->
+
+          
+          
+         <!--   <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        >
+        <ImageView 
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/ztt_35"  />
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dip"
+            android:text="年大于35摄氏度日数"
+            android:textColor="@color/black"
+            />
+        
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="10dip"
+           android:text="15-21天"
+           android:textColor="@color/gray"
+           ></TextView> 
+       
+        <TextView 
+    		         android:layout_width="fill_parent"
+    		         android:layout_height="0.5dip"
+    		         android:layout_alignParentBottom="true"
+    		         android:background="@color/division_line"  />
+        
+    </RelativeLayout> -->
+</LinearLayout>

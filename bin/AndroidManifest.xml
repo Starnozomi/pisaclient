@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.supermap.pisaclient"
+    android:versionCode="5"
+    android:versionName="1.0.0.001" >
+
+    <!-- versionCode用于系统判定的版本号 -->
+    <!-- versionName用于展示给用户的版本号 -->
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".common.ExitApplication"
+        android:allowBackup="true"
+        android:anyDensity="true"
+        android:icon="@drawable/app_ico"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="53815f0756240bc90717178d" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Channel ID" />
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="BPgj3OIlpdVv3FfSiDcUkLLAwkB3numy" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
+        <activity
+            android:name=".ui.DefaultActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.AddSuggestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.FarmManagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.HelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.WeatherActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.CopyOfSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ProductActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SituationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SuggestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SuggestAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SuggestDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AdvisoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.UserDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ProductDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.WarningActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.CityAdd"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SearchPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.CitySetActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.WarningDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.UserRegActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.CropImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.UserLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.FarmDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.CropUploadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AdvisoryAskActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.FeedBackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ScienceDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ScienceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AdvisoryQuestionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.MessageCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AdvDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ProductExpertDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".service.PisaService" />
+        <service
+            android:name="com.umeng.common.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".ui.MapActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.FarmActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.OneMapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.MeteoMapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.FarmlandCreateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.OneMapOfflineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.OneMapOOActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.DCloudActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.WorkStationSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.MaterialActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AboutappActivity"
+            android:label="@string/title_activity_aboutapp" >
+        </activity>
+        <activity
+            android:name=".CommissionActivity"
+            android:label="@string/title_activity_commission" >
+        </activity>
+        <activity
+            android:name=".DetailedcropActivity"
+            android:label="@string/title_activity_detailedcrop" >
+        </activity>
+        <activity
+            android:name=".DetailedareaActivity"
+            android:label="@string/title_activity_detailedarea" >
+        </activity>
+        <activity
+            android:name=".MyActivity"
+            android:label="@string/title_activity_my" >
+        </activity>
+        <activity
+            android:name=".ui.MyAgricultureActivity"
+            android:label="@string/title_activity_myadvisory"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MyadvisoryActivity"
+            android:label="@string/title_activity_myadvisory"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".ui.ProductNewActivity"
+            android:label="@string/title_activity_product"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.ProductWebActivity"
+            android:label="@string/title_activity_product"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+    </application>
+
+</manifest>

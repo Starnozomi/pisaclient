@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <AutoCompleteTextView 
+            android:id="@+id/actv_city"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_circle_border"
+            android:hint="@string/weather_city_serch"
+            android:dropDownVerticalOffset="5dp"
+            android:textColor="#000"
+            android:completionThreshold="1"
+            android:lines="1"
+            />
+        <ImageButton 
+            android:id="@+id/ib_serch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search"
+            android:contentDescription="@string/no_desc"
+            />
+    </LinearLayout>
+    <LinearLayout 
+        android:paddingTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/division_line"
+             />
+        <TextView 
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/weather_hot_city"
+            android:textSize="@dimen/font_size_big"
+            android:textColor="@color/division_line"           
+            android:gravity="center"
+            />
+         <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:background="@color/division_line"
+             android:layout_gravity="center_vertical"
+             />
+            </LinearLayout>
+    
+    <GridView 
+        android:id="@+id/gv_city_set"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:padding="10dp"
+        android:scrollbars="none"
+      	android:numColumns="3"
+      	android:columnWidth="100dp">
+        </GridView>
+    
+
+</LinearLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	 android:layout_width="match_parent"
+	 android:layout_height="match_parent" >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical" >
+    
+     <EditText 
+           android:id="@+id/et_advisroy_ask"
+           android:layout_height="60dp"
+           android:layout_width="fill_parent"
+		   android:inputType="textMultiLine"
+		   android:gravity="left|top"
+		   android:hint="@string/adv_please_info"
+		   android:textColor="#8e8f90"
+		   android:textSize="@dimen/adv_font_size_default"
+		   android:maxLines="3" 
+		   android:padding="5dp"
+		   android:background="@drawable/edit_selecter"
+          />
+     
+      <LinearLayout 
+           android:id="@+id/adv_img_list"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="15dp"
+           android:padding="10dp"
+           android:background="@drawable/select_picture_back"
+          >
+		        <ImageView 
+		        android:id="@+id/iv_ask_1"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:scaleType="centerCrop"
+		        android:background="@drawable/adv_imge"
+		        android:contentDescription="@string/no_desc"
+		        />
+		         <ImageView 
+		        android:id="@+id/iv_ask_2"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:scaleType="centerCrop"
+		        android:visibility="invisible"
+		        android:background="@drawable/adv_imge"
+		        android:contentDescription="@string/no_desc"
+		        />
+		        <ImageView 
+		        android:id="@+id/iv_ask_3"
+		      	android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:scaleType="centerCrop"
+		        android:visibility="invisible"
+		        android:background="@drawable/adv_imge"
+		        android:contentDescription="@string/no_desc"
+	        />
+	 	 </LinearLayout>
+	  
+     <LinearLayout 
+         	 android:id="@+id/ll_adv_area"
+	 	     android:layout_width="fill_parent"
+	 	     android:layout_height="wrap_content"
+	 	     android:padding="5dp"
+	 	  	 android:layout_marginTop="15dp"
+	 	     android:orientation="horizontal"
+	 	     android:background="@drawable/select_area_back"
+	 	     >
+	 	     <TextView 
+	 	         android:id="@+id/tv_adv_area_remind"
+	 	         android:layout_width="wrap_content"
+	 	         android:layout_height="wrap_content"
+	 	         android:text="地区选择"
+	 	         android:layout_marginLeft="10dp"
+	 	         android:textColor="@color/font_default"
+	 	         android:textSize="@dimen/adv_font_size_default"
+	 	         />
+	 	     
+	 	      <TextView 
+	 	         android:id="@+id/tv_adv_area_select"
+	 	         android:layout_width="0dp"
+	 	         android:layout_weight="1"
+	 	         android:layout_height="wrap_content"
+	 	         android:layout_marginLeft="10dp"
+	 	         android:textColor="@color/blue"
+	 	         android:textSize="@dimen/adv_font_size_default"
+	 	         />
+	 	        <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/right"
+                android:contentDescription="@string/no_desc"
+                android:layout_gravity="center_vertical"
+                />
+	 	 </LinearLayout>
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:padding="5dp"
+	    android:layout_marginTop="15dp"
+	    android:background="@drawable/select_picture_back"
+	    android:orientation="horizontal"
+	    >
+	 	<ImageView 
+	 	    android:layout_width="wrap_content"
+	 	    android:layout_height="wrap_content"
+	 	    android:background="@drawable/crop_select_remind"
+	 	    android:contentDescription="@string/no_desc"
+	 	    android:layout_gravity="center_vertical"
+	 	    />
+	    <TextView 
+	      	 android:id="@+id/tv_crop_please"
+ 	         android:layout_width="wrap_content"
+ 	         android:layout_height="wrap_content"
+ 	         android:text="作物选择"
+ 	         android:layout_marginLeft="10dp"
+ 	         android:textColor="#848180"
+ 	         android:textSize="@dimen/adv_font_size_default"
+ 	         />
+	</LinearLayout>
+	 
+      <com.supermap.pisaclient.common.views.PisaGridView 
+          android:id="@+id/gv_advisory_ask_type"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:numColumns="3"
+          android:verticalSpacing="5dp"
+          android:horizontalSpacing="5dp"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginTop="15dp"
+          ></com.supermap.pisaclient.common.views.PisaGridView>
+      
+      <LinearLayout 
+          android:layout_width="fill_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1"
+          android:layout_marginTop="10dip"
+          />
+      
+      <Button 
+           android:id="@+id/bn_advisory_upload"
+           android:layout_height="wrap_content"
+           android:layout_width="wrap_content"
+           android:text="提交"
+           android:textSize="@dimen/adv_font_size_big"
+           android:textColor="@color/white"
+           android:layout_gravity="center_horizontal"
+           android:background="@drawable/adv_takpic_selector"
+                    />
+    
+       <Button 
+           android:id="@+id/bn_advisory_cancel"
+           android:layout_height="wrap_content"
+           android:layout_width="wrap_content"
+           android:text="取消"
+           android:layout_marginTop="10dp"
+           android:textSize="@dimen/adv_font_size_big"
+           android:textColor="@color/white"
+           android:background="@drawable/adv_cancel_selector"
+           android:layout_gravity="center_horizontal"
+    />
+    
+    
+
+</LinearLayout>
+
+</ScrollView>

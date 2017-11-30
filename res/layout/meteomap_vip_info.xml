@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pup_Window_Layout"
+    android:orientation="vertical" >
+
+    <ScrollView
+		android:id="@+id/myScrollView"
+		android:layout_width="fill_parent"
+		android:layout_height="400dip">
+        
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/one_map_pup_bg"
+        android:orientation="vertical" >
+        
+        	<RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="50dip"
+		        android:layout_marginTop="10dip"
+		       	 android:layout_marginBottom="5dip"
+		         >
+		         
+        	    <TextView 
+        	        android:id="@+id/tv_vipname"
+        	        android:layout_width="wrap_content" 
+        	        android:layout_height = "wrap_content"
+        	        android:textColor="@color/black"
+        	        android:layout_centerVertical="true"
+        	        android:textSize="16dip"        	        
+        	        android:layout_marginLeft="10dip"
+        	        android:text="大户详情"
+        	        />
+        	    <ImageView 
+        	        android:id="@+id/ib_close"
+        	        android:layout_width="30dip"
+        	        android:layout_height="30dip"
+        	        android:src="@drawable/umeng_update_close_bg_normal"
+        	        android:layout_alignParentRight="true"
+        	        android:layout_marginRight="10dip"
+        	        android:layout_marginTop="10dip"
+        	        />
+        	    
+        	    
+        	    <TextView 
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="0.5dip"
+        	        android:layout_alignParentBottom="true"
+        	        android:background="@color/gray"
+        	        />
+        	    
+        	    
+        	</RelativeLayout>
+        	
+        	<LinearLayout 
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="wrap_content"
+        	    android:orientation="vertical"
+        	    android:padding="10dip"
+        	    
+        	    >
+        
+        	    	<TextView 
+	        	    android:id="@+id/tvName"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:gravity="left"
+	        	    android:padding="5dip"
+	        	    android:text="经营主体名称：四丰农田"
+	        	    />	
+        	    
+        	  
+       	
+        	      <TextView 
+	        	    android:id="@+id/tvType"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:gravity="left"
+	        	    android:padding="5dip"
+	        	    android:text="经营主体类别：其他"
+        	    />	
+        	    
+        	       <TextView 
+	        	    android:id="@+id/CountyName"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:gravity="left"
+	        	    android:padding="5dip"
+	        	    android:text="所在区县：璧山区"
+        	    />	
+        	    
+        	         <TextView 
+	        	    android:id="@+id/BelongsTownship"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:gravity="left"
+	        	    android:padding="5dip"
+	        	    android:text="所属乡镇：七塘镇"
+        	    />	
+        	    
+        	      <TextView 
+	        	    android:id="@+id/BelongsVillage"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:gravity="left"
+	        	    android:padding="5dip"
+	        	    android:text="所属村社:"
+        	    />	
+        	    
+        	      <TextView 
+	        	    android:id="@+id/BusinessScope"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:gravity="left"
+	        	    android:padding="5dip"
+	        	    android:text="经营范围：蔬菜"
+        	    />	
+        	    
+        	       <TextView 
+	        	    android:id="@+id/AreaScale"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:gravity="left"
+	        	    android:padding="5dip"
+	        	    android:text="面积或生产规模：127.4亩"
+        	    />	
+        	    
+        	        <TextView 
+	        	    android:id="@+id/AnnualProductionValue"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:gravity="left"
+	        	    android:padding="5dip"
+	        	    android:text="年产值(万元)：190"
+        	    />	
+        	    
+        	         <TextView 
+	        	    android:id="@+id/ProdOperaCount"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:gravity="left"
+	        	    android:padding="5dip"
+	        	    android:text="从事生产经营人数"
+        	    />	
+        	    
+        	          <TextView 
+	        	    android:id="@+id/TechCount"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:gravity="left"
+	        	    android:padding="5dip"
+	        	    android:text="技术人员人数：18"
+        	    />	
+        	    <TextView 
+	        	    android:id="@+id/TechAverageAge"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:gravity="left"
+	        	    android:padding="5dip"
+	        	    android:text="技术人员平均年龄：35"
+        	    />	
+        	    
+        	     <TextView 
+	        	    android:id="@+id/NetComputerAccess"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:gravity="left"
+	        	    android:padding="5dip"
+	        	    android:text="是否有电脑并能上网：是"
+        	    />	
+        	     <TextView 
+	        	    android:id="@+id/useSmartPhones"
+	        	    android:layout_width="fill_parent"
+	        	    android:layout_height="wrap_content"
+	        	    android:gravity="left"
+	        	    android:padding="5dip"
+	        	    android:text="是否使用智能手机：是"
+        	    />	
+        	   
+        	</LinearLayout>
+        	
+
+        </LinearLayout>
+        
+    </ScrollView>
+    
+
+
+   
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="product_list_menu">
+        <item>推荐</item>
+        <item>热点</item>
+        <item>最新</item>
+        <item>监测预报</item>
+        <item>防灾减灾</item>
+        <item>特色农业</item>
+        <item>农事建议</item>
+    </string-array>
+    
+    <string-array name="product_detail_menu">
+        <item>喜欢</item>
+        <item>收藏</item>
+        <item>评论</item>
+    </string-array>
+    
+
+    
+    <string-array name="citys">
+        <item>内蒙古自治区</item>
+        <item>万州区</item>
+        <item>涪陵区</item>
+        <item>渝中区</item>
+        <item>大渡口区</item>
+        <item>江北区</item>
+        <item>九龙坡区</item>
+        <item>南岸区</item>
+        <item>綦江区</item>
+        <item>万盛区</item>
+        <item>大足区</item>
+        <item>巴南区</item>
+        <item>黔江区</item>
+        <item>长寿区</item>
+        <item>永川区</item>
+        <item>内蒙古自治区</item>
+        <item>南川区</item>
+        <item>潼南区</item>
+        <item>铜梁区</item>
+        <item>荣昌县</item>
+        <item>璧山区</item>
+        <item>城口县</item>
+        <item>丰都县</item>
+        <item>垫江县</item>
+        <item>开州</item>
+        <item>云阳县</item>
+        <item>奉节县</item>
+        <item>巫山县</item>
+        <item>永川区</item>
+    </string-array>
+    
+    <string-array name="one_map_layers_list">
+        <item>大户</item>
+        <item>农田</item>
+        <item>农情</item>
+    </string-array>
+
+
+</resources>

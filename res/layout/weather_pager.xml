@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <com.supermap.pisaclient.common.views.MyScrollView 
+        android:id="@+id/sv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+      
+        >
+        <LinearLayout 
+            android:id="@+id/ll_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+        </LinearLayout>
+        
+    </com.supermap.pisaclient.common.views.MyScrollView>
+
+  <!--  <ImageView 
+        android:id="@+id/wt_pull_down_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/pull_down"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:contentDescription="@string/no_desc"
+        />-->
+
+</FrameLayout>

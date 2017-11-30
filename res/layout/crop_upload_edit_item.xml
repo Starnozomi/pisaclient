@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    <FrameLayout 
+        android:layout_width="40dp"
+        android:layout_height="fill_parent"
+        android:background="@color/country_color">
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/location_gps"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+    <RelativeLayout 
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_crop_upload_edit_name" 
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/font_size_default"
+            android:textColor="@color/font_default"
+            />
+        
+         <TextView
+            android:id="@+id/et_crop_upload_edit_content" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_crop_upload_edit_name"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/font_size_default"
+            android:textColor="@color/blue"
+            />
+         
+          <ImageView 
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/right"
+            />
+        
+    </RelativeLayout>
+
+</LinearLayout>

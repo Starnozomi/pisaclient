@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+	<RelativeLayout 
+	    android:id="@+id/rlFastAdd"
+	    android:layout_width="fill_parent"
+	    android:layout_height="60dip"
+	    >
+	    <ImageView 
+	        android:id="@+id/ivFast"
+	        android:layout_marginLeft="10dip"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/farm_new_fast"
+	       	android:layout_alignParentLeft="true"
+	       	android:layout_centerVertical="true"
+	        />
+	    
+	    <TextView 
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="快速添加农田"
+	        android:layout_toRightOf="@+id/ivFast"
+	       	android:layout_centerVertical="true"
+	       	android:layout_marginLeft="10dip"
+	        />
+	    
+	</RelativeLayout>
+    
+	<TextView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="0.5dip"
+	    android:layout_marginLeft="10dip"
+	    android:layout_marginRight="10dip"
+	    android:background="@color/division_line"
+	    />
+	
+	<RelativeLayout 
+	    android:id="@+id/rlWriteFarm"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dip"
+	    >
+	    <ImageView 
+	        android:id="@+id/ivWrite"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/farm_new_write"
+	       	android:layout_alignParentLeft="true"
+	       	android:layout_centerVertical="true"
+	       	android:layout_marginLeft="10dip"
+	        />
+	    
+	    <TextView 
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="绘制/管理农田"
+	        android:layout_toRightOf="@+id/ivWrite"
+	       	android:layout_centerVertical="true"
+	       	android:layout_marginLeft="10dip"
+	        />
+	    
+	</RelativeLayout>
+    
+</LinearLayout>

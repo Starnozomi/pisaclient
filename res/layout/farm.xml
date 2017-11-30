@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pup_Window_Layout"
+    android:orientation="vertical" >
+        		
+			
+	    <LinearLayout
+	        android:id="@+id/linearLayout1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="40dip"
+	        android:gravity="center"
+	        android:background="@color/product_background_color"
+	        android:orientation="vertical" >
+	
+	       <LinearLayout
+	            android:id="@+id/linearLayout144"
+	            android:layout_width="fill_parent"
+	            android:layout_height="35.0dip" 
+	            >
+	
+	            <TextView
+	                android:id="@+id/tvADetails"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1.0"
+	                android:gravity="center"
+	                android:text="详情" 
+	                android:textColor="@color/menu_title_selected"
+	                android:textSize="@dimen/font_size_default"/>
+	           
+	             <TextView
+	                android:id="@+id/tvWeather"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1.0"
+	                android:gravity="center"
+	                android:visibility="gone"
+	                android:text="天气" 
+	                android:textColor="@color/menu_title"
+	                android:textSize="@dimen/font_size_default"/>
+	            
+	            <TextView
+	                android:id="@+id/tvInfo"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1.0"
+	                android:gravity="center"
+	                android:text="气候"
+	                 android:visibility="gone"
+	                 android:textColor="@color/menu_title"
+	                android:textSize="@dimen/font_size_default" />
+	            <TextView
+	                android:id="@+id/tvProduct"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1.0"
+	                android:gravity="center"
+	                android:text="建议" 
+	                android:textColor="@color/menu_title"
+	                android:textSize="@dimen/font_size_default"/>
+	            
+	            <TextView
+	                android:id="@+id/tvAgrinfo"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1.0"
+	                android:gravity="center"
+	                android:text="农情" 
+	                android:textColor="@color/menu_title"
+	                android:textSize="@dimen/font_size_default"/>
+	
+	            
+	            <TextView
+	                android:id="@+id/tvAdvisory"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1.0"
+	                android:gravity="center"
+	                android:text="咨询" 
+	                android:textColor="@color/menu_title"
+	                android:textSize="@dimen/font_size_default"/>
+	            
+	           
+	            
+	        </LinearLayout>
+	
+	        <ImageView
+	            android:id="@+id/cursor"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:contentDescription="@string/no_desc"
+	            android:scaleType="matrix"
+	            android:src="@drawable/menu_line" 
+	             android:visibility="gone"
+	            />
+	
+	        <View
+	            android:layout_width="fill_parent"
+	            android:layout_height="1dip"
+	            android:background="@color/farm_menu_line_color" 
+	             android:visibility="gone"
+	            />
+	    </LinearLayout>
+	
+	    <android.support.v4.view.ViewPager
+	        android:id="@+id/id_viewpager"
+	        android:layout_width="wrap_content"
+	        android:layout_height="0dp"
+	        android:layout_gravity="center"
+	        android:layout_weight="1.0"
+	        android:background="#ffffffff"
+	        android:flipInterval="30"
+	        android:persistentDrawingCache="animation" />
+	
+	
+</LinearLayout>

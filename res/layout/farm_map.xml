@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.supermap.android.maps.MapView
+            android:id="@+id/mapview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:enabled="true" />
+
+        <Button
+            android:id="@+id/button_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/help" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_operation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/f_select_up"
+            android:contentDescription="@string/no_desc" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/add_up"
+            android:contentDescription="@string/no_desc" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/iv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_up"
+            android:contentDescription="@string/no_desc" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/iv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/save_up"
+            android:contentDescription="@string/no_desc" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/iv_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/reset_up"
+            android:contentDescription="@string/no_desc" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/f_delete_up"
+            android:contentDescription="@string/no_desc" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/iv_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/f_edit_attr_up"
+            android:contentDescription="@string/no_desc" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/iv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/local_up"
+            android:contentDescription="@string/no_desc" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/iv_farm_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/farm_list"
+            android:contentDescription="@string/no_desc" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/iv_change_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/change_map"
+            android:contentDescription="@string/no_desc" >
+        </ImageView>
+    </LinearLayout>
+
+</FrameLayout>

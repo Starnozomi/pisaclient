@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/infowindow_bg"
+    android:orientation="vertical" >
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_margin="2dp"
+         android:paddingTop="5dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="作物："
+            android:textColor="#33a3dc" />
+
+        <TextView
+            android:id="@+id/textViewCrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="5dp"
+            android:hint="作物"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imgBtnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/infowindow_close"
+        android:baselineAlignBottom="false"
+        android:src="@drawable/infowindow_close" />
+
+</LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#33a3dc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="生育期："
+            android:textColor="#33a3dc" />
+
+        <TextView
+            android:id="@+id/textViewPeriod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="5dp"
+            android:hint="作物发育期"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+    
+	 <View
+	     android:layout_width="wrap_content"
+	     android:layout_height="1sp"
+	     android:layout_marginLeft="5dp"
+	     android:layout_marginRight="5dp"
+	     android:background="#33a3dc" />
+	 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="发布人："
+            android:textColor="#33a3dc" />
+
+        <TextView
+            android:id="@+id/textViewPublishName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="5dp"
+            android:hint="农情发布人"
+            android:maxLines="2"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+    
+ 	<View
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="1sp"
+ 	    android:layout_marginLeft="5dp"
+ 	    android:layout_marginRight="5dp"
+ 	    android:background="#33a3dc" />
+
+ 	<LinearLayout
+ 	    android:layout_width="match_parent"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_margin="2dp" >
+
+ 		<TextView
+ 		    android:id="@+id/textView7"
+ 		    android:layout_width="70dp"
+ 		    android:layout_height="wrap_content"
+ 		    android:layout_marginLeft="5dp"
+ 		    android:text="发布时间："
+ 		    android:textColor="#33a3dc" />
+
+ 		<TextView
+ 		    android:id="@+id/textViewPublishTime"
+ 		    android:layout_width="wrap_content"
+ 		    android:layout_height="wrap_content"
+ 		    android:layout_marginLeft="2dp"
+ 		    android:layout_marginRight="5dp"
+ 		    android:hint="发布时间"
+ 		    android:textColor="#000000" />
+
+ 	</LinearLayout>
+ 	<View
+ 		    android:layout_width="wrap_content"
+ 		    android:layout_height="1sp"
+ 		    android:layout_marginLeft="5dp"
+ 		    android:layout_marginRight="5dp"
+ 		    android:background="#33a3dc" />
+
+ 	<LinearLayout
+ 	    android:layout_width="match_parent"
+ 	    android:layout_height="70dp"
+ 	    android:layout_marginBottom="30dp"
+ 	    android:layout_marginLeft="2dp"
+ 	    android:layout_marginRight="2dp" >
+
+ 		<ImageView
+ 		    android:id="@+id/imageView1"
+ 		    android:layout_width="70dp"
+ 		    android:layout_height="70dp"
+ 		    android:layout_margin="3dp"
+ 		    android:src="@drawable/infowindow_no_pic" />
+
+ 		<ImageView
+ 		    android:id="@+id/imageView2"
+ 		    android:layout_width="70dp"
+ 		    android:layout_height="70dp"
+ 		    android:layout_margin="3dp"
+ 		    android:src="@drawable/infowindow_no_pic_no_text" />
+
+ 		<ImageView
+ 		    android:id="@+id/imageView3"
+ 		    android:layout_width="70dp"
+ 		    android:layout_height="70dp"
+ 		    android:layout_margin="3dp"
+ 		    android:src="@drawable/infowindow_no_pic_no_text" />
+
+ 	</LinearLayout>
+
+</LinearLayout>

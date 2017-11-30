@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="font_size_default">16sp</dimen>
+    <dimen name="font_size_mini">14sp</dimen>
+    <dimen name="font_size_small">12sp</dimen>
+    <dimen name="font_size_small_mini">10sp</dimen>
+    <dimen name="font_size_big">18sp</dimen>
+    <dimen name="weather_font_size_default">16sp</dimen>
+    <dimen name="weather_font_size_small">12sp</dimen>
+    <dimen name="weather_font_size_big">24sp</dimen>
+    
+    <dimen name="adv_font_size_default">14dp</dimen>
+    <dimen name="adv_font_size_big">18dp</dimen>
+    
+    <dimen name="edit_height_default">30dp</dimen>
+    <dimen name="button_height_default">30dp</dimen>
+    <dimen name="text_width_default">80dp</dimen>
+    <dimen name="text_width_big">100dp</dimen>
+    <dimen name="et_width_default">280dp</dimen>
+    <dimen name="tv_width_default">100dp</dimen>
+
+</resources>

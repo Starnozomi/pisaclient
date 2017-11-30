@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.supermap.android.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:enabled="true" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true" >
+
+                <Button
+                    android:id="@+id/button_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/farm_manager_help_up" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/button_change_map"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/farm_manager_change_up" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_select_map"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/farm_manager_sattelite_terrain"
+                        android:baselineAligned="false"
+                        android:gravity="bottom"
+                        android:padding="10dp"
+                        android:visibility="gone" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center" >
+
+                            <ImageView
+                                android:id="@+id/iv_sattelite"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:background="@drawable/farm_manager_sattelite"
+                                android:contentDescription="@string/no_desc" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center" >
+
+                            <ImageView
+                                android:id="@+id/iv_terrain"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/farm_manager_terrain"
+                                android:contentDescription="@string/no_desc" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/button_farm_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/farm_manager_list_up" />
+
+                    <Button
+                        android:id="@+id/button_farm_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/farm_manager_location_up" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/button_zoomout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/farm_manager_zoomout_up" />
+
+                    <Button
+                        android:id="@+id/button_zoomin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/farm_manager_zoomin_up" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/rg_navigator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/farm_menu_bar"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <LinearLayout
+                android:id="@+id/ll_select"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <com.supermap.pisaclient.common.views.RemindRadioButton
+                    android:id="@+id/rad_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_select_style"
+                    android:button="@null"
+                    android:contentDescription="@string/no_desc"
+                    android:gravity="center" />
+
+                <ImageView
+                    android:id="@+id/iv_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/farm_manager_select"
+                    android:contentDescription="@string/no_desc" >
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_add"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/rad_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_add_style"
+                    android:button="@null"
+                    android:contentDescription="@string/no_desc"
+                    android:gravity="center" />
+
+                <ImageView
+                    android:id="@+id/iv_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/farm_manager_add"
+                    android:contentDescription="@string/no_desc" >
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_edit_border"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/rad_edit_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_edit_style"
+                    android:button="@null"
+                    android:contentDescription="@string/no_desc"
+                    android:gravity="center" />
+
+                <ImageView
+                    android:id="@+id/iv_edit_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/farm_manager_edit"
+                    android:contentDescription="@string/no_desc" >
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <com.supermap.pisaclient.common.views.RemindRadioButton
+                    android:id="@+id/rad_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_edit_border_style"
+                    android:button="@null"
+                    android:contentDescription="@string/no_desc"
+                    android:gravity="center" />
+
+                <ImageView
+                    android:id="@+id/iv_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/farm_manager_edit_border"
+                    android:contentDescription="@string/no_desc" >
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_save"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/rad_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_save_style"
+                    android:button="@null"
+                    android:contentDescription="@string/no_desc"
+                    android:gravity="center" />
+
+                <ImageView
+                    android:id="@+id/iv_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/farm_manager_finish"
+                    android:contentDescription="@string/no_desc" >
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/rad_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_cancel_style"
+                    android:button="@null"
+                    android:contentDescription="@string/no_desc"
+                    android:gravity="center" />
+
+                <ImageView
+                    android:id="@+id/iv_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/farm_manager_cancel"
+                    android:contentDescription="@string/no_desc" >
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_delete"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/rad_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_delete_style"
+                    android:button="@null"
+                    android:contentDescription="@string/no_desc"
+                    android:gravity="center" />
+
+                <ImageView
+                    android:id="@+id/iv_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/farm_manager_delete"
+                    android:contentDescription="@string/no_desc" >
+                </ImageView>
+            </LinearLayout>
+        </RadioGroup>
+    </LinearLayout>
+
+</FrameLayout>

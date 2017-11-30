@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="clear">清除</string>
+	<string name="editfeature_text">编辑农田区域</string>	
+	<string name="editfield_text">编辑农田属性</string>
+    <string name="addgeometry_text">添加农田</string>
+	<string name="selectegeometry_text">选择农田</string>
+	<string name="editgeometry_text">编辑农田属性</string>
+	<string name="deletegeometry_text">删除农田</string>
+	<string name="commit_text">提交</string>
+	<string name="querying">正在查询，请稍候...</string>
+	<string name="editfeature_instance">数据实例地址</string>
+	<string name="editfeature_defaultinstance">/data-jingjin/rest/data</string>
+	<string name="editfeaturedemo_readme">	 
+        <b>农田管理使用说明</b>
+		\n1.底部"选择"按钮为选择农田;
+		\n2.底部"添加"按钮为添加农田;
+		\n3.底部"编辑"按钮为编辑农田区域;
+		\n4.底部"编写"按钮为修改种养信息;
+		\n5.底部"完成"按钮为保存信息;
+		\n6.底部"撤销"按钮为取消农田操作;
+		\n7.底部"删除"按钮为删除选中农田;
+	</string>
+	
+	<string name="addfield_text">添加农田</string>
+	<string name="fieldkey_text">属性名称:</string>
+	<string name="fieldvalue_text">属性值:</string>
+	<string name="editfield_menutitle">请选择要编辑的农田</string>
+	<string name="deletefield_menuitem">删除当前属性数据</string>
+	<string name="updatefield_menuitem">修改当前属性数据</string>
+	<string name="updatefield_confirm">保存更新</string>
+	
+	<string name="editfielddemo_readme">
+        <b>农田属性编辑说明</b>
+		\n1.地图中点选一块农田，弹出属性列表;
+		\n2.长按待编辑的属性字段，选择修改属性;
+		\n3.修改属性后需保存更新。				
+	</string>
+
+    <string name="idquery_text">ID查询</string>	
+	<string name="geometryquery_text">几何查询</string>
+	<string name="bufferquery_text">缓冲区查询</string>
+	<string name="sqlquery_text">SQL查询</string>		
+	<string name="pointquery_text">点查询</string>
+	<string name="linequery_text">绘线</string>
+	<string name="regionquery_text">绘面</string>
+	<string name="query_text">查询</string>
+	<string name="dataquery_defaultinstance">/data-world/rest/data</string>
+	<string name="dataquerydemo_readme">
+        <b>农田查询说明</b>
+		\n1.点击菜单选择所需查询操作;
+        \n2.点击ID查询和SQL查询直接返回结果;
+        \n3 点击几何查询和缓冲区查询弹出可拖动的窗口;
+        \n4 窗口中支持用点线面分别查询，高亮显示结果;	
+	</string>
+</resources>
